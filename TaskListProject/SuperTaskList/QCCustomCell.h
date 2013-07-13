@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "QCAddTaskViewController.h"
-#import "SubtasksListViewController.h"
+#import "EditTaskViewController.h"
+#import "TasksViewController.h"
 
 @interface QCCustomCell : UITableViewCell{
     BOOL checked;

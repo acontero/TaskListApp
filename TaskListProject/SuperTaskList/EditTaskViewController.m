@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 self.edu. All rights reserved.
 //
 
-#import "QCAddTaskViewController.h"
+#import "EditTaskViewController.h"
 
-@interface QCAddTaskViewController ()
+@interface EditTaskViewController ()
 
 @end
 
-@implementation QCAddTaskViewController
+@implementation EditTaskViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,12 +27,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.taskTextField.delegate=self;
-    self.dateDueTextField.delegate=self;
+
 
     UIBarButtonItem *saveButton = [[UIBarButtonItem alloc]initWithTitle:@"Save" style:(UIBarButtonItemStyleBordered) target:self action:@selector(saveButtonPressed:)];
     
     self.navigationItem.rightBarButtonItem = saveButton;
+    
     
     
    self.navigationItem.title = @"New Task";
@@ -44,9 +44,9 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     NSLog(@"return button pressed");
-    [self.taskTextField resignFirstResponder];
-     [self.dateDueTextField resignFirstResponder];    
-    
+//    [self.taskTextField resignFirstResponder];
+//     [self.dateDueTextField resignFirstResponder];    
+//    
     return YES;
 }
 
@@ -61,9 +61,9 @@
 -(void)saveButtonPressed:(id)sender
 {
     
-    Tasks *task = [Tasks createEntity];
-    task.taskdescription=self.taskTextField.text;
-    task.duedate=22;
+//    Tasks *task = [Tasks createEntity];
+//    task.taskdescription=self.taskTextField.text;
+//    task.duedate=22;
 
     [[NSManagedObjectContext contextForCurrentThread] saveToPersistentStoreAndWait];
     [self.navigationController popViewControllerAnimated:YES];

@@ -16,12 +16,11 @@
 		3351A5DC176E3951006AFF83 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3351A5DB176E3951006AFF83 /* Default.png */; };
 		3351A5DE176E3951006AFF83 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3351A5DD176E3951006AFF83 /* Default@2x.png */; };
 		3351A5E0176E3951006AFF83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3351A5DF176E3951006AFF83 /* Default-568h@2x.png */; };
-		3351A5E3176E3951006AFF83 /* SubtasksListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351A5E2176E3951006AFF83 /* SubtasksListViewController.m */; };
+		3351A5E3176E3951006AFF83 /* TasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351A5E2176E3951006AFF83 /* TasksViewController.m */; };
 		3351A5E6176E3951006AFF83 /* SubtasksListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3351A5E4176E3951006AFF83 /* SubtasksListViewController.xib */; };
 		3351A5ED176E3983006AFF83 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3351A5EC176E3983006AFF83 /* CoreData.framework */; };
 		3351A793176E3D7A006AFF83 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */; };
-		3351A874176E48A0006AFF83 /* QCAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351A872176E48A0006AFF83 /* QCAddTaskViewController.m */; };
-		3351A875176E48A0006AFF83 /* QCAddTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3351A873176E48A0006AFF83 /* QCAddTaskViewController.xib */; };
+		3351A874176E48A0006AFF83 /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351A872176E48A0006AFF83 /* EditTaskViewController.m */; };
 		6FA94E68178DB0B400BE7EB7 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E30178DB0B400BE7EB7 /* MagicalImportFunctions.m */; };
 		6FA94E69178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E32178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.m */; };
 		6FA94E6A178DB0B400BE7EB7 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E34178DB0B400BE7EB7 /* NSEntityDescription+MagicalDataImport.m */; };
@@ -59,8 +58,9 @@
 		7FC0CA3317764D7700220AF9 /* QCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FC0CA3117764D7700220AF9 /* QCSettingsViewController.xib */; };
 		7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */; };
 		7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */; };
-		DB30CCEC1791A859001224EA /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCEB1791A859001224EA /* Tasks.m */; };
 		DB30CCEF1791A85A001224EA /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCEE1791A85A001224EA /* Lists.m */; };
+		DB30CCF21791C906001224EA /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF11791C906001224EA /* Tasks.m */; };
+		DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF41791EDAE001224EA /* CategoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,14 +77,13 @@
 		3351A5DB176E3951006AFF83 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3351A5DD176E3951006AFF83 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3351A5DF176E3951006AFF83 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3351A5E1176E3951006AFF83 /* SubtasksListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubtasksListViewController.h; sourceTree = "<group>"; };
-		3351A5E2176E3951006AFF83 /* SubtasksListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubtasksListViewController.m; sourceTree = "<group>"; };
+		3351A5E1176E3951006AFF83 /* TasksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksViewController.h; sourceTree = "<group>"; };
+		3351A5E2176E3951006AFF83 /* TasksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksViewController.m; sourceTree = "<group>"; };
 		3351A5E5176E3951006AFF83 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SubtasksListViewController.xib; sourceTree = "<group>"; };
 		3351A5EC176E3983006AFF83 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3351A792176E3D7A006AFF83 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		3351A871176E489F006AFF83 /* QCAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCAddTaskViewController.h; sourceTree = "<group>"; };
-		3351A872176E48A0006AFF83 /* QCAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCAddTaskViewController.m; sourceTree = "<group>"; };
-		3351A873176E48A0006AFF83 /* QCAddTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QCAddTaskViewController.xib; sourceTree = "<group>"; };
+		3351A871176E489F006AFF83 /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
+		3351A872176E48A0006AFF83 /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
 		6FA94E2F178DB0B400BE7EB7 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		6FA94E30178DB0B400BE7EB7 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		6FA94E31178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -154,10 +153,12 @@
 		7FC0CA3117764D7700220AF9 /* QCSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QCSettingsViewController.xib; sourceTree = "<group>"; };
 		7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxblank.jpeg; path = ../checkboxblank.jpeg; sourceTree = "<group>"; };
 		7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxchecked.jpeg; path = ../checkboxchecked.jpeg; sourceTree = "<group>"; };
-		DB30CCEA1791A859001224EA /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
-		DB30CCEB1791A859001224EA /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
 		DB30CCED1791A85A001224EA /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
 		DB30CCEE1791A85A001224EA /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
+		DB30CCF01791C906001224EA /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
+		DB30CCF11791C906001224EA /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
+		DB30CCF31791EDAE001224EA /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		DB30CCF41791EDAE001224EA /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,11 +213,12 @@
 			children = (
 				3351A5D8176E3951006AFF83 /* QCAppDelegate.h */,
 				3351A5D9176E3951006AFF83 /* QCAppDelegate.m */,
-				7FDB877D1777E68D00C5564E /* Subtasks View */,
-				3351A5E1176E3951006AFF83 /* SubtasksListViewController.h */,
-				3351A5E2176E3951006AFF83 /* SubtasksListViewController.m */,
+				7FDB877D1777E68D00C5564E /* Tasks View Controller */,
+				3351A5E1176E3951006AFF83 /* TasksViewController.h */,
+				3351A5E2176E3951006AFF83 /* TasksViewController.m */,
 				3351A5E4176E3951006AFF83 /* SubtasksListViewController.xib */,
-				3351A876176E48BB006AFF83 /* AddTaskViewController */,
+				3351A876176E48BB006AFF83 /* Edit Task View Controller */,
+				DB30CCF61791F0CC001224EA /* Category View Controller */,
 				7FC0CA2E17764D5C00220AF9 /* Settings */,
 				3351A794176E3D85006AFF83 /* Model */,
 				7FA04C62177F94D900D7719F /* To Do List View */,
@@ -243,23 +245,22 @@
 			isa = PBXGroup;
 			children = (
 				3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */,
+				DB30CCF01791C906001224EA /* Tasks.h */,
+				DB30CCF11791C906001224EA /* Tasks.m */,
 				DB30CCED1791A85A001224EA /* Lists.h */,
 				DB30CCEE1791A85A001224EA /* Lists.m */,
-				DB30CCEA1791A859001224EA /* Tasks.h */,
-				DB30CCEB1791A859001224EA /* Tasks.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		3351A876176E48BB006AFF83 /* AddTaskViewController */ = {
+		3351A876176E48BB006AFF83 /* Edit Task View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3351A871176E489F006AFF83 /* QCAddTaskViewController.h */,
-				3351A872176E48A0006AFF83 /* QCAddTaskViewController.m */,
-				3351A873176E48A0006AFF83 /* QCAddTaskViewController.xib */,
+				3351A871176E489F006AFF83 /* EditTaskViewController.h */,
+				3351A872176E48A0006AFF83 /* EditTaskViewController.m */,
 				7F48B8311771404A008BC001 /* CustomCell */,
 			);
-			name = AddTaskViewController;
+			name = "Edit Task View Controller";
 			sourceTree = "<group>";
 		};
 		6FA94E2C178DB0B400BE7EB7 /* MagicalRecord */ = {
@@ -386,8 +387,8 @@
 		7F48B8311771404A008BC001 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				7F48B82D17714007008BC001 /* QCCustomCell.m */,
 				7F48B82C17714007008BC001 /* QCCustomCell.h */,
+				7F48B82D17714007008BC001 /* QCCustomCell.m */,
 				7F48B82F17714032008BC001 /* QCCustomCell.xib */,
 			);
 			name = CustomCell;
@@ -424,11 +425,20 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
-		7FDB877D1777E68D00C5564E /* Subtasks View */ = {
+		7FDB877D1777E68D00C5564E /* Tasks View Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "Subtasks View";
+			name = "Tasks View Controller";
+			sourceTree = "<group>";
+		};
+		DB30CCF61791F0CC001224EA /* Category View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB30CCF31791EDAE001224EA /* CategoryViewController.h */,
+				DB30CCF41791EDAE001224EA /* CategoryViewController.m */,
+			);
+			name = "Category View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,7 +498,6 @@
 				3351A5DE176E3951006AFF83 /* Default@2x.png in Resources */,
 				3351A5E0176E3951006AFF83 /* Default-568h@2x.png in Resources */,
 				3351A5E6176E3951006AFF83 /* SubtasksListViewController.xib in Resources */,
-				3351A875176E48A0006AFF83 /* QCAddTaskViewController.xib in Resources */,
 				7F48B83017714032008BC001 /* QCCustomCell.xib in Resources */,
 				7FC0CA3317764D7700220AF9 /* QCSettingsViewController.xib in Resources */,
 				7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */,
@@ -508,9 +517,9 @@
 			files = (
 				3351A5D6176E3951006AFF83 /* main.m in Sources */,
 				3351A5DA176E3951006AFF83 /* QCAppDelegate.m in Sources */,
-				3351A5E3176E3951006AFF83 /* SubtasksListViewController.m in Sources */,
+				3351A5E3176E3951006AFF83 /* TasksViewController.m in Sources */,
 				3351A793176E3D7A006AFF83 /* Model.xcdatamodeld in Sources */,
-				3351A874176E48A0006AFF83 /* QCAddTaskViewController.m in Sources */,
+				3351A874176E48A0006AFF83 /* EditTaskViewController.m in Sources */,
 				7F48B82E17714007008BC001 /* QCCustomCell.m in Sources */,
 				7FC0CA3217764D7700220AF9 /* QCSettingsViewController.m in Sources */,
 				7FA04C60177F949A00D7719F /* QCToDoListViewController.m in Sources */,
@@ -541,8 +550,9 @@
 				6FA94E7F178DB0B400BE7EB7 /* MagicalRecord+Setup.m in Sources */,
 				6FA94E80178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */,
-				DB30CCEC1791A859001224EA /* Tasks.m in Sources */,
 				DB30CCEF1791A85A001224EA /* Lists.m in Sources */,
+				DB30CCF21791C906001224EA /* Tasks.m in Sources */,
+				DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

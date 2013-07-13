@@ -7,6 +7,7 @@
 //
 
 #import "Tasks.h"
+#import "Lists.h"
 
 
 @implementation Tasks
@@ -14,6 +15,7 @@
 @dynamic duedate;
 @dynamic taskdescription;
 @dynamic reminder;
+@dynamic taskTitle;
 @dynamic list;
 
 @end
