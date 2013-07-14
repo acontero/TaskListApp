@@ -10,6 +10,7 @@
 
 #import "TasksViewController.h"
 
+
 @implementation QCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -17,7 +18,11 @@
     
     // Setup Magial Record sync ith Core data
     [MagicalRecord setupAutoMigratingCoreDataStack];
+   
     
+    
+    //NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+   
     //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 //    self.viewController = [[SubtasksListViewController alloc] initWithNibName:@"QCViewController" bundle:nil];

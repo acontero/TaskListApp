@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="11G63b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Lists" representedClassName="Lists" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameTitle" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="task" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tasks" inverseName="list" inverseEntity="Tasks" syncable="YES"/>
     </entity>
     <entity name="Tasks" representedClassName="Tasks" syncable="YES">
@@ -12,7 +12,12 @@
         <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lists" inverseName="task" inverseEntity="Lists" syncable="YES"/>
     </entity>
     <elements>
+<<<<<<< HEAD
+        <element name="Lists" positionX="-72" positionY="126" width="128" height="73"/>
+        <element name="Tasks" positionX="160" positionY="192" width="128" height="103"/>
+=======
         <element name="Tasks" positionX="160" positionY="192" width="128" height="120"/>
         <element name="Lists" positionX="-72" positionY="126" width="128" height="75"/>
+>>>>>>> 98bb488b2794dc5249309e9e8c5656162f4c01ad
     </elements>
 </model>

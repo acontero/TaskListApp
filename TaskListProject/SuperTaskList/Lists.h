@@ -2,7 +2,7 @@
 //  Lists.h
 //  SuperTaskList
 //
-//  Created by Donysa Vacharasanee on 7/13/13.
+//  Created by QL Mac Lab on 7/13/13.
 //  Copyright (c) 2013 self.edu. All rights reserved.
 //
 
@@ -13,7 +13,7 @@
 
 @interface Lists : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * nameTitle;
 @property (nonatomic, retain) NSSet *task;
 @end
 

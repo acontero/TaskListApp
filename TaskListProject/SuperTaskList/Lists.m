@@ -2,7 +2,7 @@
 //  Lists.m
 //  SuperTaskList
 //
-//  Created by Donysa Vacharasanee on 7/13/13.
+//  Created by QL Mac Lab on 7/13/13.
 //  Copyright (c) 2013 self.edu. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 @implementation Lists
 
-@dynamic name;
+@dynamic nameTitle;
 @dynamic task;
 
 @end
