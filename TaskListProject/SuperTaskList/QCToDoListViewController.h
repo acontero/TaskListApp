@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Lists.h"
 #import "Tasks.h"
+#import "TasksViewController.h"
 #import "QCAppDelegate.h"
 
 @interface QCToDoListViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>

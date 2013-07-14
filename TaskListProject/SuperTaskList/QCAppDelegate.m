@@ -21,7 +21,7 @@
    
     
     
-    //NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
    
     //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

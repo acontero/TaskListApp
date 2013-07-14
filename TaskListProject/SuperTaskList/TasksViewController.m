@@ -22,7 +22,7 @@
     self.taskTableView.dataSource=self;
     self.taskTableView.delegate=self;
     self.textLabel.delegate=self;
-    self.tasksArray  = [[NSMutableArray alloc] init];
+    self.tasksArray  = [[NSArray alloc] init];
     
 
 }
