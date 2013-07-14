@@ -60,12 +60,11 @@
 		7FC0CA3317764D7700220AF9 /* QCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FC0CA3117764D7700220AF9 /* QCSettingsViewController.xib */; };
 		7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */; };
 		7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */; };
-<<<<<<< HEAD
-=======
+
 		DB30CCEF1791A85A001224EA /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCEE1791A85A001224EA /* Lists.m */; };
 		DB30CCF21791C906001224EA /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF11791C906001224EA /* Tasks.m */; };
 		DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF41791EDAE001224EA /* CategoryViewController.m */; };
->>>>>>> 98bb488b2794dc5249309e9e8c5656162f4c01ad
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
