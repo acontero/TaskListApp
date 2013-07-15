@@ -107,7 +107,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     EditTaskViewController *editTaskVC = [[EditTaskViewController alloc] initWithNibName:nil bundle:nil];
-    editTaskVC.editTasksScreen = [self.tasksArray objectAtIndex:indexPath.row];
+    editTaskVC.taskToBeEdited = [self.tasksArray objectAtIndex:indexPath.row];
                                   
     [self.navigationController pushViewController:editTaskVC animated:YES];
     
