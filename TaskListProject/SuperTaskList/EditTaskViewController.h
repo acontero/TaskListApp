@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "QCCustomCell.h"
 #import "TasksViewController.h"
 #import "Tasks.h"
 #import "CategoryViewController.h"

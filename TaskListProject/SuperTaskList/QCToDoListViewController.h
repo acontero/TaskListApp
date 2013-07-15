@@ -12,26 +12,22 @@
 #import "TasksViewController.h"
 #import "QCAppDelegate.h"
 
+
+BOOL clearField;
+
 @interface QCToDoListViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
-
-@property (strong, nonatomic) IBOutlet UIButton *addTaskButton;
-
-
-- (IBAction)addTaskButtonPressed:(id)sender;
 
 
 @property (strong, nonatomic) IBOutlet UIButton *addListButton;
 
 - (IBAction)addListButtonPressed:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UITextField *addNewTask;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *toDueList;
 @property (strong, nonatomic) IBOutlet UITableView *listsTableView;
 //@property (strong, nonatomic) NSMutableArray *listsArray;
 @property (strong, nonatomic) NSArray *listsArray;
-
 
 
 @end
