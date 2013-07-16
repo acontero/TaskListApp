@@ -104,12 +104,13 @@
     
     EditTaskViewController *editTaskVC = [[EditTaskViewController alloc] initWithNibName:nil bundle:nil];
     NSLog(@"%@", editTaskVC);
-    editTaskVC.editTasksScreen = [self.tasksArray objectAtIndex:indexPath.row];
+    editTaskVC.taskToBeEdited = [self.tasksArray objectAtIndex:indexPath.row];
     NSLog(@"%@", self.navigationController);
     
     [self.navigationController pushViewController:editTaskVC animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
 
 //implement this method to allow users to tap on rows
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
