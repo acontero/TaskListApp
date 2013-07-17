@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "EditTaskViewController.h"
-#import "QCCustomCell.h"
 #import "Tasks.h"
 #import "Lists.h"
 #import "EditTaskViewController.h"
@@ -22,6 +21,7 @@
 - (IBAction)addTaskButtonPressed:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UIButton *addTaskButton;
 @property (strong, nonatomic) IBOutlet UITextField *textLabel;
+@property (strong, nonatomic) Lists *currentList;
 
 
 

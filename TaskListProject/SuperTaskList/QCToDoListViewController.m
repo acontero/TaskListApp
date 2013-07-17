@@ -29,8 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    
-    self.addNewTask.delegate=self;
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+   
     self.toDueList.delegate=self;
     self.listsTableView.delegate=self;
     self.listsTableView.dataSource=self;
@@ -52,7 +52,7 @@
     
     
 //    self.listsArray = [[NSMutableArray alloc] initWithArray:[Lists findAll]];
-    self.listsArray = [Lists findAll];
+    self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     BOOL isNotFirstTimeUser = [userDefaults boolForKey:firstTimeUser];
     
@@ -69,7 +69,7 @@
     
     [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
 
-    self.listsArray = [Lists findAll];
+    self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
 
     [self.listsTableView reloadData];
     NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
@@ -101,7 +101,10 @@
     Lists  * list = self.listsArray[indexPath.row];
     NSLog(@"**** %i %@", indexPath.row, list);
     NSLog(@"%@", list.nameTitle);
-//    cell.textLabel.text = [list nameTitle];
+    cell.textLabel.text = [list nameTitle];
+    
+    
+    
     
     
 //    if (indexPath.row > 0 ){
@@ -154,18 +157,48 @@
 -(void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"didSelectRowAtIndexPath");
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    TasksViewController *TasksVC = [self.storyboard instantiateViewControllerWithIdentifier:@"taskViewControllerUI"];
+    TasksVC.currentList=[self.listsArray objectAtIndex:indexPath.row];
+    
+    [self.navigationController pushViewController:TasksVC animated:YES ];
+    
     
     // [self.navigationController pushViewController:secondVC animated:YES];
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
     
 }
 
+-(void)tableView:(UITableView*)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
 
 
+    
+    
+}
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath {
+        // If row is deleted, remove it from the list.
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+      
+        Lists *listToBeDeleted = self.listsArray[indexPath.row];        
+//        [listToBeDeleted MR_deleteInContext:[NSManagedObjectContext MR_contextForCurrentThread]];
+//         [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
+        [listToBeDeleted MR_deleteEntity];
+        self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
+         [tableView reloadData];
+    }
 
+}
 
+-(void) setEditing:(BOOL)editing animated:(BOOL)animated{
+    [super setEditing:editing animated:animated];
+    [self.listsTableView setEditing:editing animated:animated];
+    
+}
 
 
 - (void)didReceiveMemoryWarning
@@ -174,32 +207,36 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    clearField = YES;
+}
+
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     NSLog(@"return button pressed");
     [self.toDueList resignFirstResponder];
-    [self.addNewTask resignFirstResponder];
+   
     return YES;
+    
 }
+
+
 - (IBAction)addListButtonPressed:(id)sender
 {
-    
+    NSLog(@"addListButtonPressed");
     Lists *mylist = [Lists createEntity];
     mylist.nameTitle= self.toDueList.text;
     [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
 
-    self.listsArray = [Lists findAll];
+    self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];;
     
     [self.listsTableView reloadData];
-    
-    
-}
-- (IBAction)addTaskButtonPressed:(id)sender
-{
-    TasksViewController *TasksVC = [[TasksViewController alloc]initWithNibName:nil bundle:nil];
-    [self.navigationController pushViewController:TasksVC animated:YES ];
+    NSLog(@"reloaded and added list %@",mylist.nameTitle);
     
 }
+
 
 
 
