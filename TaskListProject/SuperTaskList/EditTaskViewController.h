@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "TasksViewController.h"
 #import "Tasks.h"
-#import "CategoryViewController.h"
+#import "QCViewController.h" //this is HPs DatePickerVC
+#import "Category.h"
 
 @interface EditTaskViewController : UITableViewController
-<UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
+<UITextFieldDelegate, UITextViewDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *dueDateCell;
@@ -22,6 +23,13 @@
 @property (strong, nonatomic) IBOutlet UITableViewCell *taskCategoryCell;
 
 @property (strong, nonatomic) IBOutlet UITextView *taskDescriptionTextView;
+
 @property (strong, nonatomic) Tasks *taskToBeEdited;
+
+@property (strong, nonatomic) IBOutlet UILabel *dueDateText;
+@property (strong, nonatomic) IBOutlet UILabel *reminderText;
+@property (strong, nonatomic) IBOutlet UILabel *categoryText;
+
+
 
 @end

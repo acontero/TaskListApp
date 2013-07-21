@@ -64,8 +64,14 @@
 }
 -(void)createDefaultList{
     
+    NSArray *arrayOfCategories = [[NSArray alloc]initWithObjects:@"Work",@"Shopping",@"Movies",@"Chores",@"Hobbies",@"Family",@"Friends",@"Fitness",@"Miscellaneous", nil];
+    for(int i = 0; i<arrayOfCategories.count ; i++){
+        Category *myCategory = [Category createEntity];
+        myCategory.nameOfCategory = [arrayOfCategories objectAtIndex:i];
+    }
+    
     Lists *mylist = [Lists createEntity];
-    mylist.nameTitle= @"Everyday ToDue List (Default)";
+    mylist.nameTitle= @"Everyday Task List";
     
     [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
 
@@ -104,54 +110,11 @@
     cell.textLabel.text = [list nameTitle];
     
     
-    
-    
-    
-//    if (indexPath.row > 0 ){
-//        NSLog(@"wierd logic");}
-//        
-//        
-//    else{
-//        Lists *list = [self.listsArray objectAtIndex:indexPath.row];
-//        NSLog(@"%@", list);
-//        
-//        
-//        
-//        
-//    }
-    
-    
-    // UISwipeGestureRecognizer *gesture = [[UISwipeGestureRecognizer alloc]
-    //                                         initWithTarget:self action:@selector(handleSwipeFrom:)];
-    //    [gesture setDirection:
-    //     (UISwipeGestureRecognizerDirectionLeft
-    //      |UISwipeGestureRecognizerDirectionRight)];
-    //[tableView addGestureRecognizer:gesture];
-    //[gesture release];
-    
     return cell;
     
 }
 
-//- (void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer {
-//    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
-//        [self moveLeftColumnButtonPressed:nil];
-//    }
-//    else if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
-//        [self moveRightColumnButtonPressed:nil];
-//    }
-//
-//    - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-//        // Return YES if you want the specified item to be editable.
-//        return YES;
-//    }
-//
-//    // Override to support editing the table view.
-//    - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-//        if (editingStyle == UITableViewCellEditingStyleDelete) {
-//            //add code here for when you hit delete
-//        }
-//    }
+
 
 
 -(void)tableView:(UITableView *)tableView
@@ -163,12 +126,14 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     TasksViewController *TasksVC = [self.storyboard instantiateViewControllerWithIdentifier:@"taskViewControllerUI"];
     TasksVC.currentList=[self.listsArray objectAtIndex:indexPath.row];
     
+    TasksVC.title = [[self.listsArray objectAtIndex:indexPath.row] nameTitle];
+    
     [self.navigationController pushViewController:TasksVC animated:YES ];
     
     
     // [self.navigationController pushViewController:secondVC animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
+    
     
 }
 

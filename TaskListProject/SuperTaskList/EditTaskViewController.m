@@ -14,41 +14,40 @@
 
 @implementation EditTaskViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-
-
+    [super viewDidLoad];    
+    self.taskDescriptionTextView.text = @"Enter a description:";
     UIBarButtonItem *saveButton = [[UIBarButtonItem alloc]initWithTitle:@"Save" style:(UIBarButtonItemStyleBordered) target:self action:@selector(saveButtonPressed:)];
     
     self.navigationItem.rightBarButtonItem = saveButton;
     
-    
+    NSLog(@"set savebutton in view did load editTasKVC");
     
    self.navigationItem.title = @"Edit Task";
-   self.navigationItem.rightBarButtonItem.title = @"Save";
     
+    
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd-MM -yyyy"];
+    NSDate *date = [[NSDate alloc] initWithTimeIntervalSince1970:self.taskToBeEdited.duedate];
+    
+    NSString *dateString = [dateFormat stringFromDate: date];
+    self.dueDateText.text = dateString;
+//    self.categoryText.text = self.taskToBeEdited.categoryType;
+//    NSLog(@"***categoryText is currently: %@",self.categoryText.text);
+    self.taskDescriptionTextView.text = self.taskToBeEdited.taskdescription;
 }
+
 
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     NSLog(@"return button pressed");
-//    [self.taskTextField resignFirstResponder];
-//     [self.dateDueTextField resignFirstResponder];    
-//    
+   
     return YES;
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -56,18 +55,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 #pragma mark - IBActions
+//
+//-(void)saveButtonPressed:(id)sender
+//{
+//    
+//
+//    self.taskToBeEdited.categoryType = self.categoryText.text;
+//    self.taskToBeEdited.taskdescription = self.taskDescriptionTextView.text;
+//    
+//    
+//    
+//    [[NSManagedObjectContext contextForCurrentThread] saveToPersistentStoreAndWait];
+//    [self.navigationController popViewControllerAnimated:YES];
 
--(void)saveButtonPressed:(id)sender
-{
-    
-//    Tasks *task = [Tasks createEntity];
-//    task.taskdescription=self.taskTextField.text;
-//    task.duedate=22;
-
-    [[NSManagedObjectContext contextForCurrentThread] saveToPersistentStoreAndWait];
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 
 @end

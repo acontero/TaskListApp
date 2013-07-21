@@ -2,14 +2,14 @@
 //  Tasks.h
 //  SuperTaskList
 //
-//  Created by Donysa Vacharasanee on 7/21/13.
+//  Created by Donysa Vacharasanee on 7/18/13.
 //  Copyright (c) 2013 self.edu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Lists;
+@class Category, Lists;
 
 @interface Tasks : NSManagedObject
 
@@ -19,5 +19,6 @@
 @property (nonatomic, retain) NSString * taskdescription;
 @property (nonatomic, retain) NSString * taskTitle;
 @property (nonatomic, retain) Lists *list;
+@property (nonatomic, retain) Category *correspondingCategory;
 
 @end

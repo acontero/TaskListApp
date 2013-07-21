@@ -1,18 +1,16 @@
 //
-//  Lists.m
+//  Category.m
 //  SuperTaskList
 //
 //  Created by Donysa Vacharasanee on 7/21/13.
 //  Copyright (c) 2013 self.edu. All rights reserved.
 //
 
-#import "Lists.h"
-#import "Tasks.h"
+#import "Category.h"
 
 
-@implementation Lists
+@implementation Category
 
-@dynamic nameTitle;
-@dynamic task;
+@dynamic nameOfCategory;
 
 @end

@@ -11,6 +11,7 @@
 #import "Tasks.h"
 #import "Lists.h"
 #import "EditTaskViewController.h"
+#import "Category.h"
 
 
 
@@ -22,7 +23,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *addTaskButton;
 @property (strong, nonatomic) IBOutlet UITextField *textLabel;
 @property (strong, nonatomic) Lists *currentList;
-
+//@property (strong, nonatomic) IBOutlet UINavigationItem *navBarTitle;
 
 
 @end

@@ -80,6 +80,12 @@
     NSString *dateString = [dateFormat stringFromDate:choice];
     
     self.label.text=dateString;
+    self.taskBeingAssignedDueDate.duedate = [choice  timeIntervalSince1970];
+    //[self.taskBeingAssignedDueDate setDueDate:choice];
+    
+    //DV added this code to save HP dateString
+    [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
+
 }
 
 //================================================================================================================================================

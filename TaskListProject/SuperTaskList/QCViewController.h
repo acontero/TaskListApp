@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EditTaskViewController.h" //DV added this line of code
 
 @interface QCViewController : UIViewController
 
@@ -20,6 +21,8 @@
 @property (nonatomic) BOOL isPickerShowing;
 
 @property (strong, nonatomic) IBOutlet UILabel *label;
+
+@property (strong, nonatomic) Tasks *taskBeingAssignedDueDate;
 
 - (IBAction)chooseDate:(id)sender;
 

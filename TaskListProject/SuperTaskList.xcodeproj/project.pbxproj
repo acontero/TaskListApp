@@ -47,13 +47,14 @@
 		6FA94E80178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E63178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m */; };
 		6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E65178DB0B400BE7EB7 /* MagicalRecord.m */; };
 		7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F094656178CD58700E16AB2 /* Storyboard.storyboard */; };
-		7F2DE9A21793656A00F05BB8 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DE9A11793656A00F05BB8 /* Tasks.m */; };
-		7F2DE9A51793656B00F05BB8 /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DE9A41793656B00F05BB8 /* Lists.m */; };
 		7FA04C60177F949A00D7719F /* QCToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */; };
 		7FC0CA3217764D7700220AF9 /* QCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC0CA3017764D7700220AF9 /* QCSettingsViewController.m */; };
 		7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */; };
 		7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */; };
-		DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF41791EDAE001224EA /* CategoryViewController.m */; };
+		DB3D386A179C39F900750AC1 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3D3869179C39F900750AC1 /* Category.m */; };
+		DB3D386D179C39F900750AC1 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3D386C179C39F900750AC1 /* Tasks.m */; };
+		DB3D3870179C39F900750AC1 /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3D386F179C39F900750AC1 /* Lists.m */; };
+		DB93DBDD1794DCBC0018F03F /* QCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB93DBDC1794DCBC0018F03F /* QCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,8 +77,6 @@
 		3351A792176E3D7A006AFF83 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3351A871176E489F006AFF83 /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
 		3351A872176E48A0006AFF83 /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
-		3B82417E17934D2B00D4A4CA /* QCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCViewController.m; sourceTree = "<group>"; };
-		3B82417F17934D2B00D4A4CA /* QCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCViewController.h; sourceTree = "<group>"; };
 		6FA94E2F178DB0B400BE7EB7 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		6FA94E30178DB0B400BE7EB7 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		6FA94E31178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -133,18 +132,20 @@
 		6FA94E66178DB0B400BE7EB7 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		6FA94E67178DB0B400BE7EB7 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		7F094656178CD58700E16AB2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = SuperTaskList/Storyboard.storyboard; sourceTree = "<group>"; };
-		7F2DE9A01793656A00F05BB8 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
-		7F2DE9A11793656A00F05BB8 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
-		7F2DE9A31793656B00F05BB8 /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
-		7F2DE9A41793656B00F05BB8 /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
 		7FA04C5D177F949A00D7719F /* QCToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCToDoListViewController.h; sourceTree = "<group>"; };
 		7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCToDoListViewController.m; sourceTree = "<group>"; };
 		7FC0CA2F17764D7700220AF9 /* QCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCSettingsViewController.h; sourceTree = "<group>"; };
 		7FC0CA3017764D7700220AF9 /* QCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCSettingsViewController.m; sourceTree = "<group>"; };
 		7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxblank.jpeg; path = ../checkboxblank.jpeg; sourceTree = "<group>"; };
 		7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxchecked.jpeg; path = ../checkboxchecked.jpeg; sourceTree = "<group>"; };
-		DB30CCF31791EDAE001224EA /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
-		DB30CCF41791EDAE001224EA /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		DB3D3868179C39F900750AC1 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		DB3D3869179C39F900750AC1 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		DB3D386B179C39F900750AC1 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
+		DB3D386C179C39F900750AC1 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
+		DB3D386E179C39F900750AC1 /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
+		DB3D386F179C39F900750AC1 /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
+		DB93DBDB1794DCBC0018F03F /* QCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCViewController.h; sourceTree = "<group>"; };
+		DB93DBDC1794DCBC0018F03F /* QCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +204,6 @@
 				3351A5E1176E3951006AFF83 /* TasksViewController.h */,
 				3351A5E2176E3951006AFF83 /* TasksViewController.m */,
 				3351A876176E48BB006AFF83 /* Edit Task View Controller */,
-				DB30CCF61791F0CC001224EA /* Category View Controller */,
 				7FC0CA2E17764D5C00220AF9 /* Settings */,
 				3351A794176E3D85006AFF83 /* Model */,
 				7FA04C62177F94D900D7719F /* To Do List View */,
@@ -231,10 +231,12 @@
 			isa = PBXGroup;
 			children = (
 				3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */,
-				7F2DE9A31793656B00F05BB8 /* Lists.h */,
-				7F2DE9A41793656B00F05BB8 /* Lists.m */,
-				7F2DE9A01793656A00F05BB8 /* Tasks.h */,
-				7F2DE9A11793656A00F05BB8 /* Tasks.m */,
+				DB3D386E179C39F900750AC1 /* Lists.h */,
+				DB3D386F179C39F900750AC1 /* Lists.m */,
+				DB3D386B179C39F900750AC1 /* Tasks.h */,
+				DB3D386C179C39F900750AC1 /* Tasks.m */,
+				DB3D3868179C39F900750AC1 /* Category.h */,
+				DB3D3869179C39F900750AC1 /* Category.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -251,8 +253,8 @@
 		3B82417D17934C9900D4A4CA /* DatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				3B82417E17934D2B00D4A4CA /* QCViewController.m */,
-				3B82417F17934D2B00D4A4CA /* QCViewController.h */,
+				DB93DBDB1794DCBC0018F03F /* QCViewController.h */,
+				DB93DBDC1794DCBC0018F03F /* QCViewController.m */,
 			);
 			name = DatePicker;
 			sourceTree = "<group>";
@@ -403,15 +405,6 @@
 			name = "Tasks View Controller";
 			sourceTree = "<group>";
 		};
-		DB30CCF61791F0CC001224EA /* Category View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DB30CCF31791EDAE001224EA /* CategoryViewController.h */,
-				DB30CCF41791EDAE001224EA /* CategoryViewController.m */,
-			);
-			name = "Category View Controller";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -514,9 +507,10 @@
 				6FA94E7F178DB0B400BE7EB7 /* MagicalRecord+Setup.m in Sources */,
 				6FA94E80178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */,
-				DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */,
-				7F2DE9A21793656A00F05BB8 /* Tasks.m in Sources */,
-				7F2DE9A51793656B00F05BB8 /* Lists.m in Sources */,
+				DB93DBDD1794DCBC0018F03F /* QCViewController.m in Sources */,
+				DB3D386A179C39F900750AC1 /* Category.m in Sources */,
+				DB3D386D179C39F900750AC1 /* Tasks.m in Sources */,
+				DB3D3870179C39F900750AC1 /* Lists.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
