@@ -19,8 +19,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.taskTableView.dataSource=self;
-    self.taskTableView.delegate = self;
     self.textLabel.delegate=self;
     NSLog(@"viewDidLoad");
 }
@@ -75,14 +73,15 @@
     //
     //            UITableViewCell *cell = (UITableViewCell *) [taskTableView dequeueReusableCellWithIdentifier:Cellidentifier];
     //
+    static NSString *Cellidentifier = @"checkboxCell";
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    
+    QCCell *cell = [tableView dequeueReusableCellWithIdentifier:Cellidentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"QCCell" owner:self options: nil];
+        cell = [nib objectAtIndex:0];
     }
     
-    cell.textLabel.text = [[self.tasksArray objectAtIndex:indexPath.row] taskTitle];
+    cell.taskName.text = [[self.tasksArray objectAtIndex:indexPath.row] taskTitle];
     return cell;
     
     
@@ -201,8 +200,9 @@
 {
     Tasks *task = [Tasks createEntity];
     task.taskTitle = self.textLabel.text;
+    task.list = self.currentList;
     // [self.tasksArray addObject:self.textLabel.text];
-    self.tasksArray = [Tasks findAll];
+    self.tasksArray = [Tasks findByAttribute:@"list" withValue:self.currentList];
     
     
     [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];

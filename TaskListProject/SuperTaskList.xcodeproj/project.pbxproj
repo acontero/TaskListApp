@@ -54,6 +54,15 @@
 		7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */; };
 		7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */; };
 		DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF41791EDAE001224EA /* CategoryViewController.m */; };
+		FDC213E5179C597200987040 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC213E4179C597100987040 /* MessageUI.framework */; };
+		FDC213F1179C5D4600987040 /* QCEmailUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213E8179C5D4500987040 /* QCEmailUsViewController.m */; };
+		FDC213F2179C5D4600987040 /* QCfaceBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213EA179C5D4600987040 /* QCfaceBookViewController.m */; };
+		FDC213F5179C5D4600987040 /* QCReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213F0179C5D4600987040 /* QCReviewViewController.m */; };
+		FDC213FE179C721B00987040 /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FDC213F7179C721B00987040 /* checkboxblank.jpeg */; };
+		FDC213FF179C721B00987040 /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FDC213F8179C721B00987040 /* checkboxchecked.jpeg */; };
+		FDC21400179C721B00987040 /* QCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213FA179C721B00987040 /* QCCell.m */; };
+		FDC21401179C721B00987040 /* QCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC213FB179C721B00987040 /* QCCell.xib */; };
+		FDC21402179C721B00987040 /* QCViewController 3.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213FD179C721B00987040 /* QCViewController 3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +154,20 @@
 		7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxchecked.jpeg; path = ../checkboxchecked.jpeg; sourceTree = "<group>"; };
 		DB30CCF31791EDAE001224EA /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		DB30CCF41791EDAE001224EA /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		FDC213E4179C597100987040 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		FDC213E7179C5D4500987040 /* QCEmailUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCEmailUsViewController.h; sourceTree = "<group>"; };
+		FDC213E8179C5D4500987040 /* QCEmailUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCEmailUsViewController.m; sourceTree = "<group>"; };
+		FDC213E9179C5D4500987040 /* QCfaceBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCfaceBookViewController.h; sourceTree = "<group>"; };
+		FDC213EA179C5D4600987040 /* QCfaceBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCfaceBookViewController.m; sourceTree = "<group>"; };
+		FDC213EF179C5D4600987040 /* QCReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCReviewViewController.h; sourceTree = "<group>"; };
+		FDC213F0179C5D4600987040 /* QCReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCReviewViewController.m; sourceTree = "<group>"; };
+		FDC213F7179C721B00987040 /* checkboxblank.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxblank.jpeg; path = SuperTaskList/checkboxblank.jpeg; sourceTree = "<group>"; };
+		FDC213F8179C721B00987040 /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxchecked.jpeg; path = SuperTaskList/checkboxchecked.jpeg; sourceTree = "<group>"; };
+		FDC213F9179C721B00987040 /* QCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCCell.h; path = SuperTaskList/QCCell.h; sourceTree = "<group>"; };
+		FDC213FA179C721B00987040 /* QCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCCell.m; path = SuperTaskList/QCCell.m; sourceTree = "<group>"; };
+		FDC213FB179C721B00987040 /* QCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QCCell.xib; path = SuperTaskList/QCCell.xib; sourceTree = "<group>"; };
+		FDC213FC179C721B00987040 /* QCViewController 3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "QCViewController 3.h"; path = "SuperTaskList/QCViewController 3.h"; sourceTree = "<group>"; };
+		FDC213FD179C721B00987040 /* QCViewController 3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "QCViewController 3.m"; path = "SuperTaskList/QCViewController 3.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC213E5179C597200987040 /* MessageUI.framework in Frameworks */,
 				3351A5ED176E3983006AFF83 /* CoreData.framework in Frameworks */,
 				3351A5CA176E3951006AFF83 /* UIKit.framework in Frameworks */,
 				3351A5CC176E3951006AFF83 /* Foundation.framework in Frameworks */,
@@ -166,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				7F094656178CD58700E16AB2 /* Storyboard.storyboard */,
+				FDC213F6179C718900987040 /* Checkbox Cell */,
+				FDC213E6179C5B1B00987040 /* Settings */,
 				3351A5CF176E3951006AFF83 /* SuperTaskList */,
 				6FA94E83178DB0CB00BE7EB7 /* ImageAssets */,
 				6FA94E82178DB0BD00BE7EB7 /* Libraries */,
@@ -186,6 +212,7 @@
 		3351A5C8176E3951006AFF83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDC213E4179C597100987040 /* MessageUI.framework */,
 				3351A5EC176E3983006AFF83 /* CoreData.framework */,
 				3351A5C9176E3951006AFF83 /* UIKit.framework */,
 				3351A5CB176E3951006AFF83 /* Foundation.framework */,
@@ -390,6 +417,12 @@
 		7FC0CA2E17764D5C00220AF9 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				FDC213E7179C5D4500987040 /* QCEmailUsViewController.h */,
+				FDC213E8179C5D4500987040 /* QCEmailUsViewController.m */,
+				FDC213E9179C5D4500987040 /* QCfaceBookViewController.h */,
+				FDC213EA179C5D4600987040 /* QCfaceBookViewController.m */,
+				FDC213EF179C5D4600987040 /* QCReviewViewController.h */,
+				FDC213F0179C5D4600987040 /* QCReviewViewController.m */,
 				7FC0CA2F17764D7700220AF9 /* QCSettingsViewController.h */,
 				7FC0CA3017764D7700220AF9 /* QCSettingsViewController.m */,
 			);
@@ -410,6 +443,27 @@
 				DB30CCF41791EDAE001224EA /* CategoryViewController.m */,
 			);
 			name = "Category View Controller";
+			sourceTree = "<group>";
+		};
+		FDC213E6179C5B1B00987040 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		FDC213F6179C718900987040 /* Checkbox Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FDC213F7179C721B00987040 /* checkboxblank.jpeg */,
+				FDC213F8179C721B00987040 /* checkboxchecked.jpeg */,
+				FDC213F9179C721B00987040 /* QCCell.h */,
+				FDC213FA179C721B00987040 /* QCCell.m */,
+				FDC213FB179C721B00987040 /* QCCell.xib */,
+				FDC213FC179C721B00987040 /* QCViewController 3.h */,
+				FDC213FD179C721B00987040 /* QCViewController 3.m */,
+			);
+			name = "Checkbox Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +525,9 @@
 				7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */,
 				7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */,
 				7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */,
+				FDC213FE179C721B00987040 /* checkboxblank.jpeg in Resources */,
+				FDC213FF179C721B00987040 /* checkboxchecked.jpeg in Resources */,
+				FDC21401179C721B00987040 /* QCCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +574,11 @@
 				DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */,
 				7F2DE9A21793656A00F05BB8 /* Tasks.m in Sources */,
 				7F2DE9A51793656B00F05BB8 /* Lists.m in Sources */,
+				FDC213F1179C5D4600987040 /* QCEmailUsViewController.m in Sources */,
+				FDC213F2179C5D4600987040 /* QCfaceBookViewController.m in Sources */,
+				FDC213F5179C5D4600987040 /* QCReviewViewController.m in Sources */,
+				FDC21400179C721B00987040 /* QCCell.m in Sources */,
+				FDC21402179C721B00987040 /* QCViewController 3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
