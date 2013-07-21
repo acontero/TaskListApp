@@ -19,7 +19,7 @@
                                     <constraint firstAttribute="width" constant="313" id="wdp-wT-qyb"/>
                                 </constraints>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ToDue List (dropdown)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CmT-Nn-RxI">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="List Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CmT-Nn-RxI">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="174" id="asZ-e4-hJ9"/>
                                 </constraints>
@@ -46,11 +46,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xHh-x2-qlD" firstAttribute="top" secondItem="UZo-kM-6Tk" secondAttribute="top" constant="81" id="7CB-hb-gNh"/>
-                            <constraint firstItem="gsj-Nh-B1E" firstAttribute="top" secondItem="UZo-kM-6Tk" secondAttribute="top" constant="24" id="Jt5-X6-sau"/>
+                            <constraint firstItem="gsj-Nh-B1E" firstAttribute="top" secondItem="UZo-kM-6Tk" secondAttribute="top" constant="25" id="Klu-Dk-RKF"/>
+                            <constraint firstAttribute="trailing" secondItem="gsj-Nh-B1E" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="M3X-hx-D8V"/>
                             <constraint firstItem="xHh-x2-qlD" firstAttribute="centerX" secondItem="UZo-kM-6Tk" secondAttribute="centerX" type="default" id="arh-hr-alf"/>
                             <constraint firstItem="CmT-Nn-RxI" firstAttribute="baseline" secondItem="gsj-Nh-B1E" secondAttribute="baseline" type="default" id="rCO-gO-uCF"/>
-                            <constraint firstItem="CmT-Nn-RxI" firstAttribute="leading" secondItem="UZo-kM-6Tk" secondAttribute="leading" constant="133" id="tXa-rw-4al"/>
-                            <constraint firstItem="gsj-Nh-B1E" firstAttribute="leading" secondItem="UZo-kM-6Tk" secondAttribute="leading" constant="12" id="vqt-Bp-jEd"/>
+                            <constraint firstItem="CmT-Nn-RxI" firstAttribute="leading" secondItem="UZo-kM-6Tk" secondAttribute="leading" constant="13" id="uu0-kI-llf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="efX-GV-2Xu">
@@ -166,7 +166,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="NY9-M8-Z08"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                     <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
@@ -257,7 +257,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rru-Uc-dgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="-821"/>
+            <point key="canvasLocation" x="1541" y="-922"/>
         </scene>
         <!--View Controller - Due Date-->
         <scene sceneID="T2c-r5-HMz">

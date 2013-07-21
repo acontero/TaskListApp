@@ -21,16 +21,18 @@
     
     self.textLabel.delegate=self;
     NSLog(@"viewDidLoad");
+   
 }
 
 - (void) viewDidAppear:(BOOL) animated
 {
     [super viewDidAppear:YES];
+    self.tasksArray = [Tasks findAll];
     self.tasksArray = [Tasks findByAttribute:@"list" withValue:self.currentList];
     //
     //After we setup our "Data source" we call the method reload on our tableView object so that the tableview will properly display the appropraite information.
     [self.taskTableView reloadData];
-    
+    NSLog(@"viewDidAppear");
     
 }
 
@@ -58,23 +60,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    //    static NSString *cellId = @"enteredTaskCell";
-    
-    
-    //DV added this code
-    //    UITableViewCell *cell = [taskTableView dequeueReusableCellWithIdentifier:cellId];
-    //    if (cell == nil){
-    //        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-    //
-    //
-    //            //the following code is largely standard for UITableView setup. Copy and paste this code
-    //            static NSString *Cellidentifier = @"Cell";
-    //
-    //            UITableViewCell *cell = (UITableViewCell *) [taskTableView dequeueReusableCellWithIdentifier:Cellidentifier];
-    //
-    static NSString *Cellidentifier = @"checkboxCell";
-    
+    static NSString *Cellidentifier = @"QCCell";
     QCCell *cell = [tableView dequeueReusableCellWithIdentifier:Cellidentifier];
     if (cell == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"QCCell" owner:self options: nil];
@@ -103,7 +89,7 @@
     
     EditTaskViewController *editTaskVC = [[EditTaskViewController alloc] initWithNibName:nil bundle:nil];
     NSLog(@"%@", editTaskVC);
-    editTaskVC.editTasksScreen = [self.tasksArray objectAtIndex:indexPath.row];
+    editTaskVC.taskToBeEdited = [self.tasksArray objectAtIndex:indexPath.row];
     NSLog(@"%@", self.navigationController);
     
     [self.navigationController pushViewController:editTaskVC animated:YES];
@@ -202,6 +188,8 @@
     task.taskTitle = self.textLabel.text;
     task.list = self.currentList;
     // [self.tasksArray addObject:self.textLabel.text];
+    task.list = self.currentList;
+    //self.tasksArray = [Tasks findAll];
     self.tasksArray = [Tasks findByAttribute:@"list" withValue:self.currentList];
     
     
@@ -209,7 +197,19 @@
     [self.taskTableView reloadData];
 }
 
-
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+//forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    // If row is deleted, remove it from the list.
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        
+//        
+//        Tasks *taskToDelete = self.tasksArray; indexPath.row;
+//        //        [listToBeDeleted MR_deleteInContext:[NSManagedObjectContext MR_contextForCurrentThread]];
+//        //         [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
+//        [taskToDelete MR_deleteEntity];
+//        self.tasksArray = [Tasks findAllSortedBy:@"nameTitle" ascending:YES];
+//        [tableView reloadData];
+//    }
 
 
 
