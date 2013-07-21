@@ -47,8 +47,9 @@
 		6FA94E80178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E63178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m */; };
 		6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E65178DB0B400BE7EB7 /* MagicalRecord.m */; };
 		7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F094656178CD58700E16AB2 /* Storyboard.storyboard */; };
-		7F2DE9A21793656A00F05BB8 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DE9A11793656A00F05BB8 /* Tasks.m */; };
-		7F2DE9A51793656B00F05BB8 /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DE9A41793656B00F05BB8 /* Lists.m */; };
+		7F18A55A1794DC3200403A22 /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F18A5591794DC3200403A22 /* Lists.m */; };
+		7F18A55D1794DC3200403A22 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F18A55C1794DC3200403A22 /* Tasks.m */; };
+		7F18A5601794DCF500403A22 /* QCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F18A55F1794DCF500403A22 /* QCViewController.m */; };
 		7FA04C60177F949A00D7719F /* QCToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */; };
 		7FC0CA3217764D7700220AF9 /* QCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC0CA3017764D7700220AF9 /* QCSettingsViewController.m */; };
 		7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */; };
@@ -76,8 +77,6 @@
 		3351A792176E3D7A006AFF83 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3351A871176E489F006AFF83 /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
 		3351A872176E48A0006AFF83 /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
-		3B82417E17934D2B00D4A4CA /* QCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCViewController.m; sourceTree = "<group>"; };
-		3B82417F17934D2B00D4A4CA /* QCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCViewController.h; sourceTree = "<group>"; };
 		6FA94E2F178DB0B400BE7EB7 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		6FA94E30178DB0B400BE7EB7 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		6FA94E31178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -133,10 +132,12 @@
 		6FA94E66178DB0B400BE7EB7 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		6FA94E67178DB0B400BE7EB7 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		7F094656178CD58700E16AB2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = SuperTaskList/Storyboard.storyboard; sourceTree = "<group>"; };
-		7F2DE9A01793656A00F05BB8 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
-		7F2DE9A11793656A00F05BB8 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
-		7F2DE9A31793656B00F05BB8 /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
-		7F2DE9A41793656B00F05BB8 /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
+		7F18A5581794DC3200403A22 /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
+		7F18A5591794DC3200403A22 /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
+		7F18A55B1794DC3200403A22 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
+		7F18A55C1794DC3200403A22 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
+		7F18A55E1794DCF500403A22 /* QCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCViewController.h; sourceTree = "<group>"; };
+		7F18A55F1794DCF500403A22 /* QCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCViewController.m; sourceTree = "<group>"; };
 		7FA04C5D177F949A00D7719F /* QCToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCToDoListViewController.h; sourceTree = "<group>"; };
 		7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCToDoListViewController.m; sourceTree = "<group>"; };
 		7FC0CA2F17764D7700220AF9 /* QCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCSettingsViewController.h; sourceTree = "<group>"; };
@@ -231,10 +232,10 @@
 			isa = PBXGroup;
 			children = (
 				3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */,
-				7F2DE9A31793656B00F05BB8 /* Lists.h */,
-				7F2DE9A41793656B00F05BB8 /* Lists.m */,
-				7F2DE9A01793656A00F05BB8 /* Tasks.h */,
-				7F2DE9A11793656A00F05BB8 /* Tasks.m */,
+				7F18A55B1794DC3200403A22 /* Tasks.h */,
+				7F18A55C1794DC3200403A22 /* Tasks.m */,
+				7F18A5581794DC3200403A22 /* Lists.h */,
+				7F18A5591794DC3200403A22 /* Lists.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -251,8 +252,8 @@
 		3B82417D17934C9900D4A4CA /* DatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				3B82417E17934D2B00D4A4CA /* QCViewController.m */,
-				3B82417F17934D2B00D4A4CA /* QCViewController.h */,
+				7F18A55E1794DCF500403A22 /* QCViewController.h */,
+				7F18A55F1794DCF500403A22 /* QCViewController.m */,
 			);
 			name = DatePicker;
 			sourceTree = "<group>";
@@ -515,8 +516,9 @@
 				6FA94E80178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */,
 				DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */,
-				7F2DE9A21793656A00F05BB8 /* Tasks.m in Sources */,
-				7F2DE9A51793656B00F05BB8 /* Lists.m in Sources */,
+				7F18A55A1794DC3200403A22 /* Lists.m in Sources */,
+				7F18A55D1794DC3200403A22 /* Tasks.m in Sources */,
+				7F18A5601794DCF500403A22 /* QCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
