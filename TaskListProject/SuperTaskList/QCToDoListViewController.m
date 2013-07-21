@@ -208,10 +208,10 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 
--(void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    clearField = YES;
-}
+//-(void)textFieldDidBeginEditing:(UITextField *)textField
+//{
+//    clearField = YES;
+//}
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -235,6 +235,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.listsTableView reloadData];
     NSLog(@"reloaded and added list %@",mylist.nameTitle);
     
+    self.toDueList.text = @"";
+
+  
 }
 
 

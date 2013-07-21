@@ -22,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet UITableViewCell *taskCategoryCell;
 
 @property (strong, nonatomic) IBOutlet UITextView *taskDescriptionTextView;
-@property (strong, nonatomic) Tasks *editTasksScreen;
+
+@property (strong, nonatomic) Tasks *taskToBeEdited;
 
 @end
