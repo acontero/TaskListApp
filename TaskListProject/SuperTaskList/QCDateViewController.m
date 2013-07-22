@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];g
+    [super viewDidLoad];
     [self showView];
 }
 
