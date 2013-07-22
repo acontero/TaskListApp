@@ -2,7 +2,7 @@
 //  Tasks.h
 //  SuperTaskList
 //
-//  Created by QL Mac Lab on 7/15/13.
+//  Created by Angelica Contero on 7/21/13.
 //  Copyright (c) 2013 self.edu. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 @property (nonatomic) NSTimeInterval reminder;
 @property (nonatomic, retain) NSString * taskdescription;
 @property (nonatomic, retain) NSString * taskTitle;
+@property (nonatomic) BOOL completed;
 @property (nonatomic, retain) Lists *list;
 
 @end

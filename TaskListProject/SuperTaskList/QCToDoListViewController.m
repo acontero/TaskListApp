@@ -15,15 +15,6 @@
 
 @implementation QCToDoListViewController
 
-//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-//{
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if (self) {
-//        // Custom initialization
-//    }
-//    return self;
-//}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,13 +27,6 @@
     self.listsTableView.dataSource=self;
     self.listsArray = [[NSArray alloc] init];
     
-    
-//    if (![[NSUserDefaults standardUserDefaults] boolForKey:firstTimeUser]){
-//        [self createDefaultList];
-//    }
-    
-    
-    
 }
 
 
@@ -50,8 +34,6 @@
 {
     [super viewDidAppear:YES];
     
-    
-//    self.listsArray = [[NSMutableArray alloc] initWithArray:[Lists findAll]];
     self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     BOOL isNotFirstTimeUser = [userDefaults boolForKey:firstTimeUser];
@@ -65,7 +47,7 @@
 -(void)createDefaultList{
     
     Lists *mylist = [Lists createEntity];
-    mylist.nameTitle= @"Everyday ToDue List (Default)";
+    mylist.nameTitle= @"Everyday To-Do List (Default)";
     
     [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
 
@@ -103,56 +85,9 @@
     NSLog(@"%@", list.nameTitle);
     cell.textLabel.text = [list nameTitle];
     
-    
-    
-    
-    
-//    if (indexPath.row > 0 ){
-//        NSLog(@"wierd logic");}
-//        
-//        
-//    else{
-//        Lists *list = [self.listsArray objectAtIndex:indexPath.row];
-//        NSLog(@"%@", list);
-//        
-//        
-//        
-//        
-//    }
-    
-    
-    // UISwipeGestureRecognizer *gesture = [[UISwipeGestureRecognizer alloc]
-    //                                         initWithTarget:self action:@selector(handleSwipeFrom:)];
-    //    [gesture setDirection:
-    //     (UISwipeGestureRecognizerDirectionLeft
-    //      |UISwipeGestureRecognizerDirectionRight)];
-    //[tableView addGestureRecognizer:gesture];
-    //[gesture release];
-    
     return cell;
     
 }
-
-//- (void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer {
-//    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
-//        [self moveLeftColumnButtonPressed:nil];
-//    }
-//    else if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
-//        [self moveRightColumnButtonPressed:nil];
-//    }
-//
-//    - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-//        // Return YES if you want the specified item to be editable.
-//        return YES;
-//    }
-//
-//    // Override to support editing the table view.
-//    - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-//        if (editingStyle == UITableViewCellEditingStyleDelete) {
-//            //add code here for when you hit delete
-//        }
-//    }
-
 
 -(void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -165,33 +100,29 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
     [self.navigationController pushViewController:TasksVC animated:YES ];
     
-    
-    // [self.navigationController pushViewController:secondVC animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     
 }
 
 -(void)tableView:(UITableView*)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
-
-
+    
+    
     
     
 }
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath *)indexPath {
-        // If row is deleted, remove it from the list.
+    // If row is deleted, remove it from the list.
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
-      
-        Lists *listToBeDeleted = self.listsArray[indexPath.row];        
-//        [listToBeDeleted MR_deleteInContext:[NSManagedObjectContext MR_contextForCurrentThread]];
-//         [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
+        
+        Lists *listToBeDeleted = self.listsArray[indexPath.row];
         [listToBeDeleted MR_deleteEntity];
         self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
-         [tableView reloadData];
+        [tableView reloadData];
     }
-
+    
 }
 
 -(void) setEditing:(BOOL)editing animated:(BOOL)animated{
@@ -206,12 +137,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-//-(void)textFieldDidBeginEditing:(UITextField *)textField
-//{
-//    clearField = YES;
-//}
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -236,14 +161,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"reloaded and added list %@",mylist.nameTitle);
     
     self.toDueList.text = @"";
-
-  
 }
-
-
-
-
-
-
 
 @end

@@ -1,5 +1,5 @@
 //
-//  QCViewController.h
+//  QCDateViewController.h
 //  datePicker
 //
 //  Created by Hasan Priyo on 7/13/13.
@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tasks.h"
 
 
-@interface QCViewController : UIViewController
-
-
-
-
-- (IBAction)pickDate:(id)sender;
+@interface QCDateViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIDatePicker *myPicker;
 
@@ -22,7 +18,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *label;
 
-
+@property (strong, nonatomic) Tasks *currentTaskToAssignDate;
 - (IBAction)chooseDate:(id)sender;
 
 @end

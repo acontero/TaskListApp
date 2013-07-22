@@ -13,6 +13,7 @@
 
 @interface EditTaskViewController : UITableViewController
 <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UILabel *dueDateText;
 
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *dueDateCell;

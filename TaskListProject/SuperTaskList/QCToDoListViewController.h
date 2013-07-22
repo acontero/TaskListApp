@@ -26,7 +26,6 @@ BOOL clearField;
 
 @property (strong, nonatomic) IBOutlet UITextField *toDueList;
 @property (strong, nonatomic) IBOutlet UITableView *listsTableView;
-//@property (strong, nonatomic) NSMutableArray *listsArray;
 @property (strong, nonatomic) NSArray *listsArray;
 
 

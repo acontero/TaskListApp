@@ -10,16 +10,6 @@
 
 @implementation QCCell
 
-//- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-//{
-//    self = [super initWithStyle:style reuseIdentifier:@"checkboxCell"];
-//    if (self) {
-//        // Initialization code
-//    }
-//    self.checked = NO;
-//    return self;
-//}
-
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
@@ -29,14 +19,17 @@
 
 - (IBAction)checkButton:(id)sender {
 
-    if (! self.checked) {
+    if (!self.currentTask.completed) {
         [_checkBoxButton setImage:[UIImage imageNamed:@"checkboxchecked.jpeg"] forState:UIControlStateNormal];
-        self.checked=YES;
+        self.currentTask.completed = YES;
+        NSLog(@"task completed: %i",self.currentTask.completed);
+        
     }
 
-    else if (self.checked) {
+    else if (self.currentTask.completed) {
        [ _checkBoxButton setImage:[UIImage imageNamed:@"checkboxblank.jpeg"] forState:UIControlStateNormal];
-        self.checked=NO;
+        self.currentTask.completed = NO;
+        NSLog(@"task completed: %i",self.currentTask.completed);
     }
 }
 

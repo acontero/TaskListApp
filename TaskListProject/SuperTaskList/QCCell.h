@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tasks.h"
 
 @interface QCCell : UITableViewCell
-@property BOOL checked;
 @property (strong, nonatomic) IBOutlet UIButton *checkBoxButton;
 - (IBAction)checkButton:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *taskName;
+@property (strong, nonatomic) Tasks *currentTask;
 
 @end

@@ -13,8 +13,6 @@
 		3351A5D4176E3951006AFF83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3351A5D2176E3951006AFF83 /* InfoPlist.strings */; };
 		3351A5D6176E3951006AFF83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351A5D5176E3951006AFF83 /* main.m */; };
 		3351A5DA176E3951006AFF83 /* QCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351A5D9176E3951006AFF83 /* QCAppDelegate.m */; };
-		3351A5DC176E3951006AFF83 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3351A5DB176E3951006AFF83 /* Default.png */; };
-		3351A5DE176E3951006AFF83 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3351A5DD176E3951006AFF83 /* Default@2x.png */; };
 		3351A5E0176E3951006AFF83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3351A5DF176E3951006AFF83 /* Default-568h@2x.png */; };
 		3351A5E3176E3951006AFF83 /* TasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351A5E2176E3951006AFF83 /* TasksViewController.m */; };
 		3351A5ED176E3983006AFF83 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3351A5EC176E3983006AFF83 /* CoreData.framework */; };
@@ -48,12 +46,8 @@
 		6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E65178DB0B400BE7EB7 /* MagicalRecord.m */; };
 		7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F094656178CD58700E16AB2 /* Storyboard.storyboard */; };
 		7F18A55A1794DC3200403A22 /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F18A5591794DC3200403A22 /* Lists.m */; };
-		7F18A55D1794DC3200403A22 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F18A55C1794DC3200403A22 /* Tasks.m */; };
 		7F18A5601794DCF500403A22 /* QCDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F18A55F1794DCF500403A22 /* QCDateViewController.m */; };
 		7FA04C60177F949A00D7719F /* QCToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */; };
-		7FC0CA3217764D7700220AF9 /* QCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC0CA3017764D7700220AF9 /* QCSettingsViewController.m */; };
-		7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */; };
-		7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */; };
 		DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF41791EDAE001224EA /* CategoryViewController.m */; };
 		FDC213E5179C597200987040 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC213E4179C597100987040 /* MessageUI.framework */; };
 		FDC213F1179C5D4600987040 /* QCEmailUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213E8179C5D4500987040 /* QCEmailUsViewController.m */; };
@@ -63,7 +57,9 @@
 		FDC213FF179C721B00987040 /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FDC213F8179C721B00987040 /* checkboxchecked.jpeg */; };
 		FDC21400179C721B00987040 /* QCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213FA179C721B00987040 /* QCCell.m */; };
 		FDC21401179C721B00987040 /* QCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC213FB179C721B00987040 /* QCCell.xib */; };
-		FDC21402179C721B00987040 /* QCCellPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213FD179C721B00987040 /* QCCellPracticeViewController.m */; };
+		FDC21404179CC6AD00987040 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC21403179CC6AD00987040 /* Default.png */; };
+		FDC21406179CC6B400987040 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC21405179CC6B400987040 /* Default@2x.png */; };
+		FDC21409179CCFE400987040 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC21408179CCFE400987040 /* Tasks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,8 +73,6 @@
 		3351A5D7176E3951006AFF83 /* SuperTaskList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperTaskList-Prefix.pch"; sourceTree = "<group>"; };
 		3351A5D8176E3951006AFF83 /* QCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCAppDelegate.h; sourceTree = "<group>"; };
 		3351A5D9176E3951006AFF83 /* QCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCAppDelegate.m; sourceTree = "<group>"; };
-		3351A5DB176E3951006AFF83 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		3351A5DD176E3951006AFF83 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3351A5DF176E3951006AFF83 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3351A5E1176E3951006AFF83 /* TasksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksViewController.h; sourceTree = "<group>"; };
 		3351A5E2176E3951006AFF83 /* TasksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksViewController.m; sourceTree = "<group>"; };
@@ -143,16 +137,10 @@
 		7F094656178CD58700E16AB2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = SuperTaskList/Storyboard.storyboard; sourceTree = "<group>"; };
 		7F18A5581794DC3200403A22 /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
 		7F18A5591794DC3200403A22 /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
-		7F18A55B1794DC3200403A22 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
-		7F18A55C1794DC3200403A22 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
 		7F18A55E1794DCF500403A22 /* QCDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCDateViewController.h; sourceTree = "<group>"; };
 		7F18A55F1794DCF500403A22 /* QCDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCDateViewController.m; sourceTree = "<group>"; };
 		7FA04C5D177F949A00D7719F /* QCToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCToDoListViewController.h; sourceTree = "<group>"; };
 		7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCToDoListViewController.m; sourceTree = "<group>"; };
-		7FC0CA2F17764D7700220AF9 /* QCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCSettingsViewController.h; sourceTree = "<group>"; };
-		7FC0CA3017764D7700220AF9 /* QCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCSettingsViewController.m; sourceTree = "<group>"; };
-		7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxblank.jpeg; path = ../checkboxblank.jpeg; sourceTree = "<group>"; };
-		7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxchecked.jpeg; path = ../checkboxchecked.jpeg; sourceTree = "<group>"; };
 		DB30CCF31791EDAE001224EA /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		DB30CCF41791EDAE001224EA /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		FDC213E4179C597100987040 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -162,13 +150,15 @@
 		FDC213EA179C5D4600987040 /* QCfaceBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCfaceBookViewController.m; sourceTree = "<group>"; };
 		FDC213EF179C5D4600987040 /* QCReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCReviewViewController.h; sourceTree = "<group>"; };
 		FDC213F0179C5D4600987040 /* QCReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCReviewViewController.m; sourceTree = "<group>"; };
-		FDC213F7179C721B00987040 /* checkboxblank.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxblank.jpeg; path = SuperTaskList/checkboxblank.jpeg; sourceTree = "<group>"; };
-		FDC213F8179C721B00987040 /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxchecked.jpeg; path = SuperTaskList/checkboxchecked.jpeg; sourceTree = "<group>"; };
+		FDC213F7179C721B00987040 /* checkboxblank.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkboxblank.jpeg; sourceTree = "<group>"; };
+		FDC213F8179C721B00987040 /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkboxchecked.jpeg; sourceTree = "<group>"; };
 		FDC213F9179C721B00987040 /* QCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCCell.h; path = SuperTaskList/QCCell.h; sourceTree = "<group>"; };
 		FDC213FA179C721B00987040 /* QCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCCell.m; path = SuperTaskList/QCCell.m; sourceTree = "<group>"; };
 		FDC213FB179C721B00987040 /* QCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QCCell.xib; path = SuperTaskList/QCCell.xib; sourceTree = "<group>"; };
-		FDC213FC179C721B00987040 /* QCCellPracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCCellPracticeViewController.h; path = SuperTaskList/QCCellPracticeViewController.h; sourceTree = "<group>"; };
-		FDC213FD179C721B00987040 /* QCCellPracticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCCellPracticeViewController.m; path = SuperTaskList/QCCellPracticeViewController.m; sourceTree = "<group>"; };
+		FDC21403179CC6AD00987040 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FDC21405179CC6B400987040 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FDC21407179CCFE400987040 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
+		FDC21408179CCFE400987040 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,8 +236,6 @@
 				3351A5D2176E3951006AFF83 /* InfoPlist.strings */,
 				3351A5D5176E3951006AFF83 /* main.m */,
 				3351A5D7176E3951006AFF83 /* SuperTaskList-Prefix.pch */,
-				3351A5DB176E3951006AFF83 /* Default.png */,
-				3351A5DD176E3951006AFF83 /* Default@2x.png */,
 				3351A5DF176E3951006AFF83 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -258,8 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */,
-				7F18A55B1794DC3200403A22 /* Tasks.h */,
-				7F18A55C1794DC3200403A22 /* Tasks.m */,
+				FDC21407179CCFE400987040 /* Tasks.h */,
+				FDC21408179CCFE400987040 /* Tasks.m */,
 				7F18A5581794DC3200403A22 /* Lists.h */,
 				7F18A5591794DC3200403A22 /* Lists.m */,
 			);
@@ -398,8 +386,10 @@
 		6FA94E83178DB0CB00BE7EB7 /* ImageAssets */ = {
 			isa = PBXGroup;
 			children = (
-				7FDB877E177A6A5900C5564E /* checkboxblank.jpeg */,
-				7FDB8780177A6AE700C5564E /* checkboxchecked.jpeg */,
+				FDC21405179CC6B400987040 /* Default@2x.png */,
+				FDC21403179CC6AD00987040 /* Default.png */,
+				FDC213F7179C721B00987040 /* checkboxblank.jpeg */,
+				FDC213F8179C721B00987040 /* checkboxchecked.jpeg */,
 			);
 			name = ImageAssets;
 			path = SuperTaskList;
@@ -423,8 +413,6 @@
 				FDC213EA179C5D4600987040 /* QCfaceBookViewController.m */,
 				FDC213EF179C5D4600987040 /* QCReviewViewController.h */,
 				FDC213F0179C5D4600987040 /* QCReviewViewController.m */,
-				7FC0CA2F17764D7700220AF9 /* QCSettingsViewController.h */,
-				7FC0CA3017764D7700220AF9 /* QCSettingsViewController.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -448,13 +436,9 @@
 		FDC213F6179C718900987040 /* Checkbox Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FDC213F7179C721B00987040 /* checkboxblank.jpeg */,
-				FDC213F8179C721B00987040 /* checkboxchecked.jpeg */,
 				FDC213F9179C721B00987040 /* QCCell.h */,
 				FDC213FA179C721B00987040 /* QCCell.m */,
 				FDC213FB179C721B00987040 /* QCCell.xib */,
-				FDC213FC179C721B00987040 /* QCCellPracticeViewController.h */,
-				FDC213FD179C721B00987040 /* QCCellPracticeViewController.m */,
 			);
 			name = "Checkbox Cell";
 			sourceTree = "<group>";
@@ -512,15 +496,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3351A5D4176E3951006AFF83 /* InfoPlist.strings in Resources */,
-				3351A5DC176E3951006AFF83 /* Default.png in Resources */,
-				3351A5DE176E3951006AFF83 /* Default@2x.png in Resources */,
 				3351A5E0176E3951006AFF83 /* Default-568h@2x.png in Resources */,
-				7FDB877F177A6A5900C5564E /* checkboxblank.jpeg in Resources */,
-				7FDB8781177A6AE700C5564E /* checkboxchecked.jpeg in Resources */,
 				7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */,
 				FDC213FE179C721B00987040 /* checkboxblank.jpeg in Resources */,
 				FDC213FF179C721B00987040 /* checkboxchecked.jpeg in Resources */,
 				FDC21401179C721B00987040 /* QCCell.xib in Resources */,
+				FDC21404179CC6AD00987040 /* Default.png in Resources */,
+				FDC21406179CC6B400987040 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +518,6 @@
 				3351A5E3176E3951006AFF83 /* TasksViewController.m in Sources */,
 				3351A793176E3D7A006AFF83 /* Model.xcdatamodeld in Sources */,
 				3351A874176E48A0006AFF83 /* EditTaskViewController.m in Sources */,
-				7FC0CA3217764D7700220AF9 /* QCSettingsViewController.m in Sources */,
 				7FA04C60177F949A00D7719F /* QCToDoListViewController.m in Sources */,
 				6FA94E68178DB0B400BE7EB7 /* MagicalImportFunctions.m in Sources */,
 				6FA94E69178DB0B400BE7EB7 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -569,10 +550,9 @@
 				FDC213F2179C5D4600987040 /* QCfaceBookViewController.m in Sources */,
 				FDC213F5179C5D4600987040 /* QCReviewViewController.m in Sources */,
 				FDC21400179C721B00987040 /* QCCell.m in Sources */,
-				FDC21402179C721B00987040 /* QCCellPracticeViewController.m in Sources */,
 				7F18A55A1794DC3200403A22 /* Lists.m in Sources */,
-				7F18A55D1794DC3200403A22 /* Tasks.m in Sources */,
 				7F18A5601794DCF500403A22 /* QCDateViewController.m in Sources */,
+				FDC21409179CCFE400987040 /* Tasks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

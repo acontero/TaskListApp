@@ -1,5 +1,5 @@
 //
-//  QCViewController.m
+//  QCDateViewController.m
 //  datePicker
 //
 //  Created by Hasan Priyo on 7/13/13.
@@ -8,20 +8,31 @@
 
 #import "QCDateViewController.h"
 
-@interface QCViewController ()
+@interface QCDateViewController ()
 @end
-@implementation QCViewController
+@implementation QCDateViewController
 @synthesize myPicker;
 
 
 
 - (void)viewDidLoad
-
 {
-    [super viewDidLoad];
+    [super viewDidLoad];g
+    [self showView];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    myPicker.datePickerMode = UIDatePickerModeDate;
+
+    NSDate * choice = [myPicker date];
     
-    self.myPicker.hidden = YES;
-    self.isPickerShowing = NO;
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd-MM -yyyy"];
+    NSString *dateString = [dateFormat stringFromDate:choice];
+    
+    self.label.text=dateString;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,31 +40,6 @@
 {
     [super didReceiveMemoryWarning];
 }
-
-- (IBAction)pickDate:(id)sender
-
-{
-    if (self.isPickerShowing ==  NO){
-        NSLog(@"pickDate");
-        [self showView];
-    }
-    else {
-        [self hideView];
-    }
-
-}
-
-- (void) hideView
-
-{
-    [UIView animateWithDuration:0.5
-                     animations:^{
-                         myPicker.frame = CGRectMake(0, -250, 320, 50);
-                     } completion:^(BOOL finished) {
-                         [myPicker removeFromSuperview];
-                     }];
-}
-
 
 - (void) showView
 
@@ -69,19 +55,13 @@
                      }];
 }
 
-//================================================================================================================================================
-
-- (IBAction)chooseDate:(id)sender {
-    
+- (IBAction)chooseDate:(id)sender
+{        
     NSDate * choice = [myPicker date];
-    
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"dd-MM -yyyy"];
-    NSString *dateString = [dateFormat stringFromDate:choice];
-    
-    self.label.text=dateString;
+    self.currentTaskToAssignDate.duedate = [choice timeIntervalSince1970];
+    [[NSManagedObjectContext contextForCurrentThread] saveToPersistentStoreAndWait];
+    NSLog(@"self.taskToBeEdited.duedate from DatePickerVC = %f",self.currentTaskToAssignDate.duedate);
+    [self.navigationController popViewControllerAnimated:YES];
 }
-
-//================================================================================================================================================
 
 @end

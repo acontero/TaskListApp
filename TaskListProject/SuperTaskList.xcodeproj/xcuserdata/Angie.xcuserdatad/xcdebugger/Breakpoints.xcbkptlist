@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SuperTaskList/TasksViewController.m"
-         timestampString = "396132363.610531"
+         timestampString = "396154958.360142"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "55"
-         endingLineNumber = "55"
+         startingLineNumber = "40"
+         endingLineNumber = "40"
          landmarkName = "-tableView:numberOfRowsInSection:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SuperTaskList/TasksViewController.m"
-         timestampString = "396132433.671027"
+         timestampString = "396151923.474766"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "32"
-         endingLineNumber = "32"
+         startingLineNumber = "33"
+         endingLineNumber = "33"
          landmarkName = "-viewDidAppear:"
          landmarkType = "5">
       </FileBreakpoint>

@@ -1,5 +1,5 @@
 //
-//  SubtasksListViewController.m
+//  TasksListViewController.m
 //  SuperTaskList
 //
 //  Created by Jonathan Zhu on 6/16/13.
@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.textLabel.delegate=self;
@@ -29,28 +30,12 @@
     [super viewDidAppear:YES];
     self.tasksArray = [Tasks findAll];
     self.tasksArray = [Tasks findByAttribute:@"list" withValue:self.currentList];
-    //
-    //After we setup our "Data source" we call the method reload on our tableView object so that the tableview will properly display the appropraite information.
+
+    //After we setup our "Data source" we call the method reload on our tableView object so that the tableview will properly display the appropriate information.
     [self.taskTableView reloadData];
     NSLog(@"viewDidAppear");
     
 }
-
-//-(void) addTaskPressed: (id)sender
-//{
-//
-//
-//    QCAddTaskViewController *addTaskViewController = [[QCAddTaskViewController alloc] init];
-//
-//    [self.navigationController pushViewController: addTaskViewController animated:YES];
-//
-//}
-
-
-
-
-////DV added this line of code
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -66,18 +51,19 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"QCCell" owner:self options: nil];
         cell = [nib objectAtIndex:0];
     }
-    
+    cell.currentTask = [self.tasksArray objectAtIndex:indexPath.row];
     cell.taskName.text = [[self.tasksArray objectAtIndex:indexPath.row] taskTitle];
+    BOOL checked = [[self.tasksArray objectAtIndex:indexPath.row] completed];
+    
+    if (checked == YES) {
+        [cell.checkBoxButton setImage:[UIImage imageNamed:@"checkboxchecked.jpeg"] forState:UIControlStateNormal];
+    }
+    else{
+        [cell.checkBoxButton setImage:[UIImage imageNamed:@"checkboxblank.jpeg"] forState:UIControlStateNormal];
+    }
+
+    NSLog(@"task completed: %i",[[self.tasksArray objectAtIndex:indexPath.row] completed]);
     return cell;
-    
-    
-    //DV NOT sure about the following code
-    
-    
-    //NSLog(@"our current task array which is an organized set of Task Objects: %@",_tasks);
-    //NSLog(@"the row selected by the user sent to our method as a parameter [indexPath row] (indexPath has a property row) %i",[indexPath row]);
-    
-    //returns our custom cell
     
 }
 
@@ -87,83 +73,13 @@
     NSLog(@"didSelectRowAtIndexPath");
     //After the user touches the row, deselect the row
     
-    EditTaskViewController *editTaskVC = [[EditTaskViewController alloc] initWithNibName:nil bundle:nil];
-    NSLog(@"%@", editTaskVC);
+    EditTaskViewController *editTaskVC = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:nil] instantiateViewControllerWithIdentifier:@"editTaskPage"];
     editTaskVC.taskToBeEdited = [self.tasksArray objectAtIndex:indexPath.row];
     NSLog(@"%@", self.navigationController);
     
     [self.navigationController pushViewController:editTaskVC animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-
-//implement this method to allow users to tap on rows
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//
-//    
-//    //    Tasks *taskTitle = [self.tasksArray objectAtIndex:indexPath.row];
-//    
-//    //    Tasks *taskTitle = [Tasks createEntity];
-//    //    taskTitle.duedate = list.duedate;
-//    //    taskTitle.taskdescription = list.taskdescription;
-//    //    taskTitle.reminder = [Tasks findAll].count + 1;
-//    //
-//    //    [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
-//}
-
-
-//End of code DV added
-//
-//
-//}
-
-
-
-
-
-
-
-
-//    return cell;
-//
-//
-//
-//}
-
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
-//forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    
-
-    
-    // If row is deleted, remove it from the list.
-//    if (editingStyle == UITableViewCellEditingStyleDelete) {
-//        
-//        
-//        Lists *listToBeDeleted = self.tasksArray[indexPath.row];
-//      
-//        [listToBeDeleted MR_deleteEntity];
-//        self.tasksArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
-//        [tableView reloadData];
-//    }
-//    
-//}
-
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
-//forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    // If row is deleted, remove it from the list.
-//    if (editingStyle == UITableViewCellEditingStyleDelete) {
-//        
-//        
-//        Lists *listToBeDeleted = self.listsArray[indexPath.row];
-//        //        [listToBeDeleted MR_deleteInContext:[NSManagedObjectContext MR_contextForCurrentThread]];
-//        //         [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
-//        [listToBeDeleted MR_deleteEntity];
-//        self.listsArray = [Lists findAllSortedBy:@"nameTitle" ascending:YES];
-//        [tableView reloadData];
-//    }
-//
-
 
 
 #pragma mark - UITextFieldDelegate
@@ -189,27 +105,40 @@
     task.list = self.currentList;
     // [self.tasksArray addObject:self.textLabel.text];
     task.list = self.currentList;
+    task.completed = NO;
     //self.tasksArray = [Tasks findAll];
     self.tasksArray = [Tasks findByAttribute:@"list" withValue:self.currentList];
     
     
     [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
     [self.taskTableView reloadData];
+    
+    self.textLabel.text = @"";
+
 }
 
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
-//forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    // If row is deleted, remove it from the list.
-//    if (editingStyle == UITableViewCellEditingStyleDelete) {
-//        
-//        
-//        Tasks *taskToDelete = self.tasksArray; indexPath.row;
-//        //        [listToBeDeleted MR_deleteInContext:[NSManagedObjectContext MR_contextForCurrentThread]];
-//        //         [[NSManagedObjectContext MR_contextForCurrentThread]MR_saveToPersistentStoreAndWait];
-//        [taskToDelete MR_deleteEntity];
-//        self.tasksArray = [Tasks findAllSortedBy:@"nameTitle" ascending:YES];
-//        [tableView reloadData];
-//    }
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath {
+    // If row is deleted, remove it from the list.
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        
+        Tasks *taskToBeDeleted = self.tasksArray[indexPath.row];
+        [taskToBeDeleted MR_deleteEntity];
+        self.tasksArray = [Tasks findByAttribute:@"list" withValue:self.currentList];;
+        [tableView reloadData];
+    }
+    
+}
+
+-(void) setEditing:(BOOL)editing animated:(BOOL)animated
+{
+    [super setEditing:editing animated:animated];
+    [self.taskTableView setEditing:editing animated:animated];
+    
+}
+
+
 
 
 
