@@ -60,6 +60,8 @@
 		FDC21404179CC6AD00987040 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC21403179CC6AD00987040 /* Default.png */; };
 		FDC21406179CC6B400987040 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC21405179CC6B400987040 /* Default@2x.png */; };
 		FDC21409179CCFE400987040 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC21408179CCFE400987040 /* Tasks.m */; };
+		FDC2140E179CE0DE00987040 /* busybee icon 57.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC2140C179CE0DE00987040 /* busybee icon 57.png */; };
+		FDC2140F179CE0DE00987040 /* busybee icon 114.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC2140D179CE0DE00987040 /* busybee icon 114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +161,8 @@
 		FDC21405179CC6B400987040 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FDC21407179CCFE400987040 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
 		FDC21408179CCFE400987040 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
+		FDC2140C179CE0DE00987040 /* busybee icon 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "busybee icon 57.png"; sourceTree = "<group>"; };
+		FDC2140D179CE0DE00987040 /* busybee icon 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "busybee icon 114.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +390,8 @@
 		6FA94E83178DB0CB00BE7EB7 /* ImageAssets */ = {
 			isa = PBXGroup;
 			children = (
+				FDC2140C179CE0DE00987040 /* busybee icon 57.png */,
+				FDC2140D179CE0DE00987040 /* busybee icon 114.png */,
 				FDC21405179CC6B400987040 /* Default@2x.png */,
 				FDC21403179CC6AD00987040 /* Default.png */,
 				FDC213F7179C721B00987040 /* checkboxblank.jpeg */,
@@ -503,6 +509,8 @@
 				FDC21401179C721B00987040 /* QCCell.xib in Resources */,
 				FDC21404179CC6AD00987040 /* Default.png in Resources */,
 				FDC21406179CC6B400987040 /* Default@2x.png in Resources */,
+				FDC2140E179CE0DE00987040 /* busybee icon 57.png in Resources */,
+				FDC2140F179CE0DE00987040 /* busybee icon 114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
