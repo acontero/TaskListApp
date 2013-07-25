@@ -56,10 +56,10 @@
     BOOL checked = [[self.tasksArray objectAtIndex:indexPath.row] completed];
     
     if (checked == YES) {
-        [cell.checkBoxButton setImage:[UIImage imageNamed:@"checkboxchecked.jpeg"] forState:UIControlStateNormal];
+        [cell.checkBoxButton setImage:[UIImage imageNamed:@"checkboxmark.png"] forState:UIControlStateNormal];
     }
     else{
-        [cell.checkBoxButton setImage:[UIImage imageNamed:@"checkboxblank.jpeg"] forState:UIControlStateNormal];
+        [cell.checkBoxButton setImage:[UIImage imageNamed:@"checkbox.png"] forState:UIControlStateNormal];
     }
 
     NSLog(@"task completed: %i",[[self.tasksArray objectAtIndex:indexPath.row] completed]);

@@ -17,14 +17,42 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"send.png"]];
     
-    UIBarButtonItem *saveButton = [[UIBarButtonItem alloc]initWithTitle:@"Save" style:(UIBarButtonItemStyleBordered) target:self action:@selector(saveButtonPressed:)];
+    //BACK BUTTON
+    UIImage *backImage = [UIImage imageNamed:@"backbutton.png"];
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setBackgroundImage: [backImage stretchableImageWithLeftCapWidth:7.0 topCapHeight:0.0] forState:UIControlStateNormal];
+//    [button setBackgroundImage: [[UIImage imageNamed: @"right_clicked.png"] stretchableImageWithLeftCapWidth:7.0 topCapHeight:0.0] forState:UIControlStateHighlighted];
     
-    self.navigationItem.rightBarButtonItem = saveButton;
+    backButton.frame= CGRectMake(0.0, 0.0, backImage.size.width, backImage.size.height);
+    UIView *v=[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, backImage.size.width, backImage.size.height) ];
+    [backButton addTarget:self action:@selector(goToPreviousView) forControlEvents:UIControlEventTouchUpInside];
+    [v addSubview:backButton];
+    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:v];
+    self.navigationItem.leftBarButtonItem= back;
     
+    //SAVE BUTTON
+    UIImage *saveImage = [UIImage imageNamed:@"save.png"];
+    UIButton *saveButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [saveButton setBackgroundImage: [saveImage stretchableImageWithLeftCapWidth:7.0 topCapHeight:0.0] forState:UIControlStateNormal];
+    //    [button setBackgroundImage: [[UIImage imageNamed: @"right_clicked.png"] stretchableImageWithLeftCapWidth:7.0 topCapHeight:0.0] forState:UIControlStateHighlighted];
+    
+    saveButton.frame= CGRectMake(0.0, 0.0, saveImage.size.width, saveImage.size.height);
+    UIView *saveView=[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, saveImage.size.width, saveImage.size.height) ];
+    [saveButton addTarget:self action:@selector(saveButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [saveView addSubview:saveButton];
+    UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithCustomView:saveView];
+    self.navigationItem.rightBarButtonItem= save;
+    
+        
     NSLog(@"set savebutton in view did load editTasKVC");
     
-    self.navigationItem.title = @"Edit Task";
+//    self.navigationItem.title = @"Edit Task";
+}
+
+-(void)goToPreviousView{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated{

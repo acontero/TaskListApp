@@ -79,7 +79,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     }
-    
+    cell.textLabel.font = [UIFont fontWithName:@"Thonburi" size:17.0f];
     Lists  * list = self.listsArray[indexPath.row];
     NSLog(@"**** %i %@", indexPath.row, list);
     NSLog(@"%@", list.nameTitle);

@@ -49,19 +49,43 @@
 		7F18A5601794DCF500403A22 /* QCDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F18A55F1794DCF500403A22 /* QCDateViewController.m */; };
 		7FA04C60177F949A00D7719F /* QCToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */; };
 		DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF41791EDAE001224EA /* CategoryViewController.m */; };
+		FD17571517A061CC00366EAC /* addlist.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1756F717A061CC00366EAC /* addlist.png */; };
+		FD17571617A061CC00366EAC /* addlist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1756F817A061CC00366EAC /* addlist@2x.png */; };
+		FD17571717A061CC00366EAC /* addtask.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1756F917A061CC00366EAC /* addtask.png */; };
+		FD17571817A061CC00366EAC /* addtask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1756FA17A061CC00366EAC /* addtask@2x.png */; };
+		FD17571917A061CC00366EAC /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1756FB17A061CC00366EAC /* backbutton.png */; };
+		FD17571A17A061CC00366EAC /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1756FC17A061CC00366EAC /* backbutton@2x.png */; };
+		FD17571B17A061CC00366EAC /* busybee icon 57.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1756FD17A061CC00366EAC /* busybee icon 57.png */; };
+		FD17571C17A061CC00366EAC /* busybee icon 114.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1756FE17A061CC00366EAC /* busybee icon 114.png */; };
+		FD17571D17A061CC00366EAC /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1756FF17A061CC00366EAC /* cancel.png */; };
+		FD17571E17A061CC00366EAC /* cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570017A061CC00366EAC /* cancel@2x.png */; };
+		FD17571F17A061CC00366EAC /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570117A061CC00366EAC /* checkbox.png */; };
+		FD17572017A061CC00366EAC /* checkbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570217A061CC00366EAC /* checkbox@2x.png */; };
+		FD17572117A061CC00366EAC /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD17570317A061CC00366EAC /* checkboxblank.jpeg */; };
+		FD17572217A061CC00366EAC /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD17570417A061CC00366EAC /* checkboxchecked.jpeg */; };
+		FD17572317A061CC00366EAC /* checkboxmark.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570517A061CC00366EAC /* checkboxmark.png */; };
+		FD17572417A061CC00366EAC /* checkboxmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570617A061CC00366EAC /* checkboxmark@2x.png */; };
+		FD17572517A061CC00366EAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570717A061CC00366EAC /* Default.png */; };
+		FD17572617A061CC00366EAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570817A061CC00366EAC /* Default@2x.png */; };
+		FD17572717A061CC00366EAC /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570917A061CC00366EAC /* edit.png */; };
+		FD17572817A061CC00366EAC /* edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570A17A061CC00366EAC /* edit@2x.png */; };
+		FD17572917A061CC00366EAC /* forwardbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570B17A061CC00366EAC /* forwardbutton.png */; };
+		FD17572A17A061CC00366EAC /* forwardbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570C17A061CC00366EAC /* forwardbutton@2x.png */; };
+		FD17572B17A061CC00366EAC /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570D17A061CC00366EAC /* info.png */; };
+		FD17572C17A061CC00366EAC /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570E17A061CC00366EAC /* info@2x.png */; };
+		FD17572D17A061CC00366EAC /* navbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17570F17A061CC00366EAC /* navbackground.png */; };
+		FD17572E17A061CC00366EAC /* navbackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17571017A061CC00366EAC /* navbackground@2x.png */; };
+		FD17572F17A061CC00366EAC /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17571117A061CC00366EAC /* save.png */; };
+		FD17573017A061CC00366EAC /* save@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17571217A061CC00366EAC /* save@2x.png */; };
+		FD17573117A061CC00366EAC /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17571317A061CC00366EAC /* send.png */; };
+		FD17573217A061CC00366EAC /* send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17571417A061CC00366EAC /* send@2x.png */; };
 		FDC213E5179C597200987040 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC213E4179C597100987040 /* MessageUI.framework */; };
 		FDC213F1179C5D4600987040 /* QCEmailUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213E8179C5D4500987040 /* QCEmailUsViewController.m */; };
 		FDC213F2179C5D4600987040 /* QCfaceBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213EA179C5D4600987040 /* QCfaceBookViewController.m */; };
 		FDC213F5179C5D4600987040 /* QCReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213F0179C5D4600987040 /* QCReviewViewController.m */; };
-		FDC213FE179C721B00987040 /* checkboxblank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FDC213F7179C721B00987040 /* checkboxblank.jpeg */; };
-		FDC213FF179C721B00987040 /* checkboxchecked.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FDC213F8179C721B00987040 /* checkboxchecked.jpeg */; };
 		FDC21400179C721B00987040 /* QCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213FA179C721B00987040 /* QCCell.m */; };
 		FDC21401179C721B00987040 /* QCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC213FB179C721B00987040 /* QCCell.xib */; };
-		FDC21404179CC6AD00987040 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC21403179CC6AD00987040 /* Default.png */; };
-		FDC21406179CC6B400987040 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC21405179CC6B400987040 /* Default@2x.png */; };
 		FDC21409179CCFE400987040 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC21408179CCFE400987040 /* Tasks.m */; };
-		FDC2140E179CE0DE00987040 /* busybee icon 57.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC2140C179CE0DE00987040 /* busybee icon 57.png */; };
-		FDC2140F179CE0DE00987040 /* busybee icon 114.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC2140D179CE0DE00987040 /* busybee icon 114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +169,36 @@
 		7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCToDoListViewController.m; sourceTree = "<group>"; };
 		DB30CCF31791EDAE001224EA /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		DB30CCF41791EDAE001224EA /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		FD1756F717A061CC00366EAC /* addlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addlist.png; path = Images/addlist.png; sourceTree = SOURCE_ROOT; };
+		FD1756F817A061CC00366EAC /* addlist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "addlist@2x.png"; path = "Images/addlist@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD1756F917A061CC00366EAC /* addtask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addtask.png; path = Images/addtask.png; sourceTree = SOURCE_ROOT; };
+		FD1756FA17A061CC00366EAC /* addtask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "addtask@2x.png"; path = "Images/addtask@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD1756FB17A061CC00366EAC /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backbutton.png; path = Images/backbutton.png; sourceTree = SOURCE_ROOT; };
+		FD1756FC17A061CC00366EAC /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backbutton@2x.png"; path = "Images/backbutton@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD1756FD17A061CC00366EAC /* busybee icon 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "busybee icon 57.png"; path = "Images/busybee icon 57.png"; sourceTree = SOURCE_ROOT; };
+		FD1756FE17A061CC00366EAC /* busybee icon 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "busybee icon 114.png"; path = "Images/busybee icon 114.png"; sourceTree = SOURCE_ROOT; };
+		FD1756FF17A061CC00366EAC /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancel.png; path = Images/cancel.png; sourceTree = SOURCE_ROOT; };
+		FD17570017A061CC00366EAC /* cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cancel@2x.png"; path = "Images/cancel@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17570117A061CC00366EAC /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox.png; path = Images/checkbox.png; sourceTree = SOURCE_ROOT; };
+		FD17570217A061CC00366EAC /* checkbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox@2x.png"; path = "Images/checkbox@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17570317A061CC00366EAC /* checkboxblank.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxblank.jpeg; path = Images/checkboxblank.jpeg; sourceTree = SOURCE_ROOT; };
+		FD17570417A061CC00366EAC /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = checkboxchecked.jpeg; path = Images/checkboxchecked.jpeg; sourceTree = SOURCE_ROOT; };
+		FD17570517A061CC00366EAC /* checkboxmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkboxmark.png; path = Images/checkboxmark.png; sourceTree = SOURCE_ROOT; };
+		FD17570617A061CC00366EAC /* checkboxmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkboxmark@2x.png"; path = "Images/checkboxmark@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17570717A061CC00366EAC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = SOURCE_ROOT; };
+		FD17570817A061CC00366EAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17570917A061CC00366EAC /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edit.png; path = Images/edit.png; sourceTree = SOURCE_ROOT; };
+		FD17570A17A061CC00366EAC /* edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "edit@2x.png"; path = "Images/edit@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17570B17A061CC00366EAC /* forwardbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forwardbutton.png; path = Images/forwardbutton.png; sourceTree = SOURCE_ROOT; };
+		FD17570C17A061CC00366EAC /* forwardbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "forwardbutton@2x.png"; path = "Images/forwardbutton@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17570D17A061CC00366EAC /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = Images/info.png; sourceTree = SOURCE_ROOT; };
+		FD17570E17A061CC00366EAC /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "info@2x.png"; path = "Images/info@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17570F17A061CC00366EAC /* navbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navbackground.png; path = Images/navbackground.png; sourceTree = SOURCE_ROOT; };
+		FD17571017A061CC00366EAC /* navbackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbackground@2x.png"; path = "Images/navbackground@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17571117A061CC00366EAC /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = save.png; path = Images/save.png; sourceTree = SOURCE_ROOT; };
+		FD17571217A061CC00366EAC /* save@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "save@2x.png"; path = "Images/save@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17571317A061CC00366EAC /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = send.png; path = Images/send.png; sourceTree = SOURCE_ROOT; };
+		FD17571417A061CC00366EAC /* send@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "send@2x.png"; path = "Images/send@2x.png"; sourceTree = SOURCE_ROOT; };
 		FDC213E4179C597100987040 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		FDC213E7179C5D4500987040 /* QCEmailUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCEmailUsViewController.h; sourceTree = "<group>"; };
 		FDC213E8179C5D4500987040 /* QCEmailUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCEmailUsViewController.m; sourceTree = "<group>"; };
@@ -152,17 +206,11 @@
 		FDC213EA179C5D4600987040 /* QCfaceBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCfaceBookViewController.m; sourceTree = "<group>"; };
 		FDC213EF179C5D4600987040 /* QCReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCReviewViewController.h; sourceTree = "<group>"; };
 		FDC213F0179C5D4600987040 /* QCReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCReviewViewController.m; sourceTree = "<group>"; };
-		FDC213F7179C721B00987040 /* checkboxblank.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkboxblank.jpeg; sourceTree = "<group>"; };
-		FDC213F8179C721B00987040 /* checkboxchecked.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkboxchecked.jpeg; sourceTree = "<group>"; };
 		FDC213F9179C721B00987040 /* QCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCCell.h; path = SuperTaskList/QCCell.h; sourceTree = "<group>"; };
 		FDC213FA179C721B00987040 /* QCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCCell.m; path = SuperTaskList/QCCell.m; sourceTree = "<group>"; };
 		FDC213FB179C721B00987040 /* QCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QCCell.xib; path = SuperTaskList/QCCell.xib; sourceTree = "<group>"; };
-		FDC21403179CC6AD00987040 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		FDC21405179CC6B400987040 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FDC21407179CCFE400987040 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
 		FDC21408179CCFE400987040 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
-		FDC2140C179CE0DE00987040 /* busybee icon 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "busybee icon 57.png"; sourceTree = "<group>"; };
-		FDC2140D179CE0DE00987040 /* busybee icon 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "busybee icon 114.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,12 +438,36 @@
 		6FA94E83178DB0CB00BE7EB7 /* ImageAssets */ = {
 			isa = PBXGroup;
 			children = (
-				FDC2140C179CE0DE00987040 /* busybee icon 57.png */,
-				FDC2140D179CE0DE00987040 /* busybee icon 114.png */,
-				FDC21405179CC6B400987040 /* Default@2x.png */,
-				FDC21403179CC6AD00987040 /* Default.png */,
-				FDC213F7179C721B00987040 /* checkboxblank.jpeg */,
-				FDC213F8179C721B00987040 /* checkboxchecked.jpeg */,
+				FD1756F717A061CC00366EAC /* addlist.png */,
+				FD1756F817A061CC00366EAC /* addlist@2x.png */,
+				FD1756F917A061CC00366EAC /* addtask.png */,
+				FD1756FA17A061CC00366EAC /* addtask@2x.png */,
+				FD1756FB17A061CC00366EAC /* backbutton.png */,
+				FD1756FC17A061CC00366EAC /* backbutton@2x.png */,
+				FD1756FD17A061CC00366EAC /* busybee icon 57.png */,
+				FD1756FE17A061CC00366EAC /* busybee icon 114.png */,
+				FD1756FF17A061CC00366EAC /* cancel.png */,
+				FD17570017A061CC00366EAC /* cancel@2x.png */,
+				FD17570117A061CC00366EAC /* checkbox.png */,
+				FD17570217A061CC00366EAC /* checkbox@2x.png */,
+				FD17570317A061CC00366EAC /* checkboxblank.jpeg */,
+				FD17570417A061CC00366EAC /* checkboxchecked.jpeg */,
+				FD17570517A061CC00366EAC /* checkboxmark.png */,
+				FD17570617A061CC00366EAC /* checkboxmark@2x.png */,
+				FD17570717A061CC00366EAC /* Default.png */,
+				FD17570817A061CC00366EAC /* Default@2x.png */,
+				FD17570917A061CC00366EAC /* edit.png */,
+				FD17570A17A061CC00366EAC /* edit@2x.png */,
+				FD17570B17A061CC00366EAC /* forwardbutton.png */,
+				FD17570C17A061CC00366EAC /* forwardbutton@2x.png */,
+				FD17570D17A061CC00366EAC /* info.png */,
+				FD17570E17A061CC00366EAC /* info@2x.png */,
+				FD17570F17A061CC00366EAC /* navbackground.png */,
+				FD17571017A061CC00366EAC /* navbackground@2x.png */,
+				FD17571117A061CC00366EAC /* save.png */,
+				FD17571217A061CC00366EAC /* save@2x.png */,
+				FD17571317A061CC00366EAC /* send.png */,
+				FD17571417A061CC00366EAC /* send@2x.png */,
 			);
 			name = ImageAssets;
 			path = SuperTaskList;
@@ -504,13 +576,37 @@
 				3351A5D4176E3951006AFF83 /* InfoPlist.strings in Resources */,
 				3351A5E0176E3951006AFF83 /* Default-568h@2x.png in Resources */,
 				7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */,
-				FDC213FE179C721B00987040 /* checkboxblank.jpeg in Resources */,
-				FDC213FF179C721B00987040 /* checkboxchecked.jpeg in Resources */,
 				FDC21401179C721B00987040 /* QCCell.xib in Resources */,
-				FDC21404179CC6AD00987040 /* Default.png in Resources */,
-				FDC21406179CC6B400987040 /* Default@2x.png in Resources */,
-				FDC2140E179CE0DE00987040 /* busybee icon 57.png in Resources */,
-				FDC2140F179CE0DE00987040 /* busybee icon 114.png in Resources */,
+				FD17571517A061CC00366EAC /* addlist.png in Resources */,
+				FD17571617A061CC00366EAC /* addlist@2x.png in Resources */,
+				FD17571717A061CC00366EAC /* addtask.png in Resources */,
+				FD17571817A061CC00366EAC /* addtask@2x.png in Resources */,
+				FD17571917A061CC00366EAC /* backbutton.png in Resources */,
+				FD17571A17A061CC00366EAC /* backbutton@2x.png in Resources */,
+				FD17571B17A061CC00366EAC /* busybee icon 57.png in Resources */,
+				FD17571C17A061CC00366EAC /* busybee icon 114.png in Resources */,
+				FD17571D17A061CC00366EAC /* cancel.png in Resources */,
+				FD17571E17A061CC00366EAC /* cancel@2x.png in Resources */,
+				FD17571F17A061CC00366EAC /* checkbox.png in Resources */,
+				FD17572017A061CC00366EAC /* checkbox@2x.png in Resources */,
+				FD17572117A061CC00366EAC /* checkboxblank.jpeg in Resources */,
+				FD17572217A061CC00366EAC /* checkboxchecked.jpeg in Resources */,
+				FD17572317A061CC00366EAC /* checkboxmark.png in Resources */,
+				FD17572417A061CC00366EAC /* checkboxmark@2x.png in Resources */,
+				FD17572517A061CC00366EAC /* Default.png in Resources */,
+				FD17572617A061CC00366EAC /* Default@2x.png in Resources */,
+				FD17572717A061CC00366EAC /* edit.png in Resources */,
+				FD17572817A061CC00366EAC /* edit@2x.png in Resources */,
+				FD17572917A061CC00366EAC /* forwardbutton.png in Resources */,
+				FD17572A17A061CC00366EAC /* forwardbutton@2x.png in Resources */,
+				FD17572B17A061CC00366EAC /* info.png in Resources */,
+				FD17572C17A061CC00366EAC /* info@2x.png in Resources */,
+				FD17572D17A061CC00366EAC /* navbackground.png in Resources */,
+				FD17572E17A061CC00366EAC /* navbackground@2x.png in Resources */,
+				FD17572F17A061CC00366EAC /* save.png in Resources */,
+				FD17573017A061CC00366EAC /* save@2x.png in Resources */,
+				FD17573117A061CC00366EAC /* send.png in Resources */,
+				FD17573217A061CC00366EAC /* send@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

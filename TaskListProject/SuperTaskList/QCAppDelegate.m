@@ -18,10 +18,12 @@
     
     // Setup Magial Record sync ith Core data
     [MagicalRecord setupAutoMigratingCoreDataStack];
-   
+    UIImage *navBarImage = [[UIImage imageNamed:@"navbackground"]
+                                resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [[UINavigationBar appearance] setBackgroundImage:navBarImage
+                                       forBarMetrics:UIBarMetricsDefault];
     
-    
-    NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+//    NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
    
     //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
