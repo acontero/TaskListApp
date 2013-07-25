@@ -2,7 +2,7 @@
 //  Lists.h
 //  SuperTaskList
 //
-//  Created by QL Mac Lab on 7/15/13.
+//  Created by Angelica Contero on 7/24/13.
 //  Copyright (c) 2013 self.edu. All rights reserved.
 //
 

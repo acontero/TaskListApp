@@ -57,14 +57,8 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:YES];
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"dd-MM -yyyy"];
-    NSDate *date = [[NSDate alloc] initWithTimeIntervalSince1970:self.taskToBeEdited.duedate];
-    NSLog(@"self.taskToBeEdited.duedate from EditVC = %f",self.taskToBeEdited.duedate);
-    if(self.taskToBeEdited.duedate){
-        NSString *dateString = [dateFormat stringFromDate: date];
-        self.dueDateText.text = dateString;
-    }
+    self.dueDateLabel.text = self.taskToBeEdited.duedate;
+    NSLog(@"date in editTaskVC: %@",self.taskToBeEdited.duedate);
     self.taskDescriptionTextView.text = self.taskToBeEdited.taskdescription;
 }
 

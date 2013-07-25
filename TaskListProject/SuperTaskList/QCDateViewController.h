@@ -16,7 +16,7 @@
 
 @property (nonatomic) BOOL isPickerShowing;
 
-@property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UILabel *dateLabel;
 
 @property (strong, nonatomic) Tasks *currentTaskToAssignDate;
 - (IBAction)chooseDate:(id)sender;

@@ -21,15 +21,15 @@
 
     if (!self.currentTask.completed) {
         [_checkBoxButton setImage:[UIImage imageNamed:@"checkboxmark.png"] forState:UIControlStateNormal];
-        self.currentTask.completed = YES;
-        NSLog(@"task completed: %i",self.currentTask.completed);
+        self.currentTask.completed = [[NSNumber alloc] initWithBool:YES];
+        NSLog(@"task completed: %@",self.currentTask.completed);
         
     }
 
     else if (self.currentTask.completed) {
        [ _checkBoxButton setImage:[UIImage imageNamed:@"checkbox.png"] forState:UIControlStateNormal];
-        self.currentTask.completed = NO;
-        NSLog(@"task completed: %i",self.currentTask.completed);
+        self.currentTask.completed = [[NSNumber alloc] initWithBool:NO];
+        NSLog(@"task completed: %@",self.currentTask.completed);
     }
 }
 

@@ -197,7 +197,7 @@
                                             <constraint firstItem="qfI-Mu-wkS" firstAttribute="top" secondItem="xgx-iw-w7e" secondAttribute="top" constant="11" id="pNV-2X-45K"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="noH-fD-dw8" kind="push" id="gyY-JW-7Si"/>
+                                            <segue destination="noH-fD-dw8" kind="push" id="eNN-7y-HKe"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" textLabel="uv2-dq-lAu" rowHeight="14" style="IBUITableViewCellStyleDefault" id="s08-a2-1fM">
@@ -225,7 +225,7 @@
                     </tableView>
                     <connections>
                         <outlet property="dueDateCell" destination="xgx-iw-w7e" id="Igx-Bc-MZR"/>
-                        <outlet property="dueDateText" destination="4Jk-53-CGE" id="luM-do-y5w"/>
+                        <outlet property="dueDateLabel" destination="4Jk-53-CGE" id="x78-mc-KfI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rru-Uc-dgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -287,14 +287,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 </data>
                                 </timeZone>
                             </datePicker>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dP7-31-YiA">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="hHN-NN-Dmo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbh-qC-dE5">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Set Date">
@@ -308,30 +300,17 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <action selector="chooseDate:" destination="noH-fD-dw8" eventType="touchUpInside" id="aTj-i0-8Yn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date Selected:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn9-eB-Bud">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="112" id="xf0-Ym-6vJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="sbh-qC-dE5" firstAttribute="centerX" secondItem="qwS-tz-qVZ" secondAttribute="centerX" type="default" id="2TR-h2-0pB"/>
                             <constraint firstItem="qwS-tz-qVZ" firstAttribute="leading" secondItem="Zji-Cz-4Xb" secondAttribute="leading" type="default" id="MLE-fx-AjW"/>
-                            <constraint firstItem="mn9-eB-Bud" firstAttribute="leading" secondItem="Zji-Cz-4Xb" secondAttribute="leading" constant="50" id="OY9-1K-DlL"/>
-                            <constraint firstItem="mn9-eB-Bud" firstAttribute="top" secondItem="Zji-Cz-4Xb" secondAttribute="top" constant="54" id="TQ7-db-vPY"/>
                             <constraint firstAttribute="bottom" secondItem="sbh-qC-dE5" secondAttribute="bottom" constant="33" id="bRF-Sz-Hs2"/>
-                            <constraint firstItem="dP7-31-YiA" firstAttribute="baseline" secondItem="mn9-eB-Bud" secondAttribute="baseline" type="default" id="glG-tA-Pxo"/>
                             <constraint firstItem="qwS-tz-qVZ" firstAttribute="centerY" secondItem="Zji-Cz-4Xb" secondAttribute="centerY" type="default" id="qo5-rY-4se"/>
-                            <constraint firstItem="dP7-31-YiA" firstAttribute="leading" secondItem="mn9-eB-Bud" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="znf-hY-Q78"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lsb-Mi-Kh1"/>
                     <connections>
-                        <outlet property="label" destination="dP7-31-YiA" id="55h-fl-EBi"/>
                         <outlet property="myPicker" destination="qwS-tz-qVZ" id="DPe-nx-l6O"/>
                     </connections>
                 </viewController>
@@ -671,7 +650,7 @@ Jonathan Zhu</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditTaskViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="dueDateCell" candidateClass="UITableViewCell"/>
-                <relationship kind="outlet" name="dueDateText" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="dueDateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="reminderCell" candidateClass="UITableViewCell"/>
                 <relationship kind="outlet" name="taskCategoryCell" candidateClass="UITableViewCell"/>
                 <relationship kind="outlet" name="taskDescriptionTextView" candidateClass="UITextView"/>
@@ -684,7 +663,7 @@ Jonathan Zhu</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/QCDateViewController.h"/>
             <relationships>
                 <relationship kind="action" name="chooseDate:"/>
-                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="myPicker" candidateClass="UIDatePicker"/>
             </relationships>
         </class>

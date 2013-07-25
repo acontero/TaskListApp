@@ -45,7 +45,6 @@
 		6FA94E80178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E63178DB0B400BE7EB7 /* MagicalRecord+ShorthandSupport.m */; };
 		6FA94E81178DB0B400BE7EB7 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA94E65178DB0B400BE7EB7 /* MagicalRecord.m */; };
 		7F094657178CD58700E16AB2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F094656178CD58700E16AB2 /* Storyboard.storyboard */; };
-		7F18A55A1794DC3200403A22 /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F18A5591794DC3200403A22 /* Lists.m */; };
 		7F18A5601794DCF500403A22 /* QCDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F18A55F1794DCF500403A22 /* QCDateViewController.m */; };
 		7FA04C60177F949A00D7719F /* QCToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04C5E177F949A00D7719F /* QCToDoListViewController.m */; };
 		DB30CCF51791EDAF001224EA /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30CCF41791EDAE001224EA /* CategoryViewController.m */; };
@@ -79,13 +78,14 @@
 		FD17573017A061CC00366EAC /* save@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17571217A061CC00366EAC /* save@2x.png */; };
 		FD17573117A061CC00366EAC /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17571317A061CC00366EAC /* send.png */; };
 		FD17573217A061CC00366EAC /* send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD17571417A061CC00366EAC /* send@2x.png */; };
+		FD17574017A0D6F000366EAC /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = FD17573F17A0D6EF00366EAC /* Tasks.m */; };
+		FD17574317A0D70A00366EAC /* Lists.m in Sources */ = {isa = PBXBuildFile; fileRef = FD17574217A0D70A00366EAC /* Lists.m */; };
 		FDC213E5179C597200987040 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC213E4179C597100987040 /* MessageUI.framework */; };
 		FDC213F1179C5D4600987040 /* QCEmailUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213E8179C5D4500987040 /* QCEmailUsViewController.m */; };
 		FDC213F2179C5D4600987040 /* QCfaceBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213EA179C5D4600987040 /* QCfaceBookViewController.m */; };
 		FDC213F5179C5D4600987040 /* QCReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213F0179C5D4600987040 /* QCReviewViewController.m */; };
 		FDC21400179C721B00987040 /* QCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC213FA179C721B00987040 /* QCCell.m */; };
 		FDC21401179C721B00987040 /* QCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC213FB179C721B00987040 /* QCCell.xib */; };
-		FDC21409179CCFE400987040 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC21408179CCFE400987040 /* Tasks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,8 +161,6 @@
 		6FA94E66178DB0B400BE7EB7 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		6FA94E67178DB0B400BE7EB7 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		7F094656178CD58700E16AB2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = SuperTaskList/Storyboard.storyboard; sourceTree = "<group>"; };
-		7F18A5581794DC3200403A22 /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
-		7F18A5591794DC3200403A22 /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
 		7F18A55E1794DCF500403A22 /* QCDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCDateViewController.h; sourceTree = "<group>"; };
 		7F18A55F1794DCF500403A22 /* QCDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCDateViewController.m; sourceTree = "<group>"; };
 		7FA04C5D177F949A00D7719F /* QCToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCToDoListViewController.h; sourceTree = "<group>"; };
@@ -199,6 +197,10 @@
 		FD17571217A061CC00366EAC /* save@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "save@2x.png"; path = "Images/save@2x.png"; sourceTree = SOURCE_ROOT; };
 		FD17571317A061CC00366EAC /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = send.png; path = Images/send.png; sourceTree = SOURCE_ROOT; };
 		FD17571417A061CC00366EAC /* send@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "send@2x.png"; path = "Images/send@2x.png"; sourceTree = SOURCE_ROOT; };
+		FD17573E17A0D6EF00366EAC /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tasks.h; path = ../Tasks.h; sourceTree = "<group>"; };
+		FD17573F17A0D6EF00366EAC /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tasks.m; path = ../Tasks.m; sourceTree = "<group>"; };
+		FD17574117A0D70A00366EAC /* Lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lists.h; sourceTree = "<group>"; };
+		FD17574217A0D70A00366EAC /* Lists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lists.m; sourceTree = "<group>"; };
 		FDC213E4179C597100987040 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		FDC213E7179C5D4500987040 /* QCEmailUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCEmailUsViewController.h; sourceTree = "<group>"; };
 		FDC213E8179C5D4500987040 /* QCEmailUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCEmailUsViewController.m; sourceTree = "<group>"; };
@@ -209,8 +211,6 @@
 		FDC213F9179C721B00987040 /* QCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCCell.h; path = SuperTaskList/QCCell.h; sourceTree = "<group>"; };
 		FDC213FA179C721B00987040 /* QCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCCell.m; path = SuperTaskList/QCCell.m; sourceTree = "<group>"; };
 		FDC213FB179C721B00987040 /* QCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QCCell.xib; path = SuperTaskList/QCCell.xib; sourceTree = "<group>"; };
-		FDC21407179CCFE400987040 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
-		FDC21408179CCFE400987040 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,10 +298,10 @@
 			isa = PBXGroup;
 			children = (
 				3351A791176E3D7A006AFF83 /* Model.xcdatamodeld */,
-				FDC21407179CCFE400987040 /* Tasks.h */,
-				FDC21408179CCFE400987040 /* Tasks.m */,
-				7F18A5581794DC3200403A22 /* Lists.h */,
-				7F18A5591794DC3200403A22 /* Lists.m */,
+				FD17574117A0D70A00366EAC /* Lists.h */,
+				FD17574217A0D70A00366EAC /* Lists.m */,
+				FD17573E17A0D6EF00366EAC /* Tasks.h */,
+				FD17573F17A0D6EF00366EAC /* Tasks.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -654,9 +654,9 @@
 				FDC213F2179C5D4600987040 /* QCfaceBookViewController.m in Sources */,
 				FDC213F5179C5D4600987040 /* QCReviewViewController.m in Sources */,
 				FDC21400179C721B00987040 /* QCCell.m in Sources */,
-				7F18A55A1794DC3200403A22 /* Lists.m in Sources */,
 				7F18A5601794DCF500403A22 /* QCDateViewController.m in Sources */,
-				FDC21409179CCFE400987040 /* Tasks.m in Sources */,
+				FD17574017A0D6F000366EAC /* Tasks.m in Sources */,
+				FD17574317A0D70A00366EAC /* Lists.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

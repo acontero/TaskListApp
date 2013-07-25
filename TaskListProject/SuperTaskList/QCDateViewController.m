@@ -31,7 +31,7 @@
     [dateFormat setDateFormat:@"dd-MM -yyyy"];
     NSString *dateString = [dateFormat stringFromDate:choice];
     
-    self.label.text=dateString;
+    self.dateLabel.text=dateString;
 
 }
 
@@ -57,10 +57,17 @@
 
 - (IBAction)chooseDate:(id)sender
 {        
-    NSDate * choice = [myPicker date];
-    self.currentTaskToAssignDate.duedate = [choice timeIntervalSince1970];
-    [[NSManagedObjectContext contextForCurrentThread] saveToPersistentStoreAndWait];
-    NSLog(@"self.taskToBeEdited.duedate from DatePickerVC = %f",self.currentTaskToAssignDate.duedate);
+    NSDate *date = [myPicker date];
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MM/dd/YYYY"];
+    NSString *dateString = [dateFormat stringFromDate: date];
+    NSLog(@"dateString: %@",dateString);
+    [self.currentTaskToAssignDate setValue: date forKey:@"date"];
+    
+    //self.currentTaskToAssignDate.duedate = dateString;
+    NSLog(@"self.taskToBeEdited.duedate from QCDateVC = %@",self.currentTaskToAssignDate.duedate);
+    [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
